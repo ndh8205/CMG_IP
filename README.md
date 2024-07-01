@@ -1,5 +1,4 @@
-# Control analysis of Inverted Pendulum Robot  equipped with CMG  
-![image](https://github.com/ndh8205/CMG_IP/assets/148195357/f199c4c1-5124-4b8f-aaa4-349f933eacc4)
+# Posture control of a Two wheel robot using CMG  
 
 ***
 ![RCTVC](Image/Main_page.png)
