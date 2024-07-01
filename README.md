@@ -1,4 +1,6 @@
-# CMG_IP에 대한 자료를 정리할 것
+# Control analysis of Inverted Pendulum Robot  equipped with CMG  
+![image](https://github.com/ndh8205/CMG_IP/assets/148195357/f199c4c1-5124-4b8f-aaa4-349f933eacc4)
+
 ***
 ![RCTVC](Image/Main_page.png)
 ***
