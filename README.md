@@ -15,17 +15,13 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ## Inverted pendulum Parameters
 |Symbol|Description|Value|
 |:---|:---|:---|
-||Mass of the cart (kg)|2|
+|M|Mass of the cart (kg)|2|
 |m|Mass of the pendulum (kg)|0.5|
 |L|Length of pendulum (m)|0.3|
 |r|Radius of the pendulum (m)|0.05|
 |g|Gravity (m/s^2)|9.81|
 
-|Symbol|Description|Value|
-|:---|:---|:---|
-|M|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+
 
 
 
