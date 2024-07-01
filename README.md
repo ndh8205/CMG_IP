@@ -38,7 +38,7 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ## Control Design & Simulation
 
 
-### Proportional Integral Derivative (PID) Control
+### PID (Proportional Integral Derivative) Control
 
 ### PID Tuning
 
