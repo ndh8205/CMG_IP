@@ -12,7 +12,18 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 "This project is to control a Two wheel robot using CMG (Control Moment Gyro). The project sequence is analysis, simulation without control input, Simulation with PID control. The project contents follows the picture below
 ![RCTVC](Image/contents.png)
 
-## Parameters for the system
+## Inverted pendulum Parameters
+|Symbol||Description||Value|
+|:---||:---||:---|
+|M||Mass of the cart (kg)||2|
+|m||Mass of the pendulum (kg)||0.5|
+|L||Length of pendulum (m)||0.3|
+|r||Radius of the pendulum (m)||0.05|
+|g||Gravity (m/s^2)||9.81|
+
+
+
+
 
 ## Control Design
 
