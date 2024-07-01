@@ -21,6 +21,11 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 |r||Radius of the pendulum (m)||0.05|
 |g||Gravity (m/s^2)||9.81|
 
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
 
 
 
