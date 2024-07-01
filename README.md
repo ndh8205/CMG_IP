@@ -4,6 +4,12 @@
 ***
 ## Direct by Ruherpan
 
-수요일 11시에 검사
+## Intro
+"This project is to control a Two wheel robot using CMG (Control Moment Gyro). The project order is Starting form analyze, simulate with out control input, simulate with PID control. The project contents follows the picture below
+![RCTVC](Image/contents.png)
 
-참고 자료는 ODMSBR github 참고
+## Start Guide
+
+
+
+
