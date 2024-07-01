@@ -1,6 +1,6 @@
 # CMG_IP에 대한 자료를 정리할 것
 ***
-![RCTVC](Image/Main_page.pdf)
+![RCTVC](Image/Main_page.png)
 ***
 ## Direct by Ruherpan
 
