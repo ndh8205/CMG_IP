@@ -1,5 +1,3 @@
-# Posture control of a Two wheel robot using CMG  
-
 ***
 ![RCTVC](Image/Main_page.png)
 ***
