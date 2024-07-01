@@ -12,7 +12,18 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 "This project is to control a Two wheel robot using CMG (Control Moment Gyro). The project sequence is analysis, simulation without control input, Simulation with PID control. The project contents follows the picture below
 ![RCTVC](Image/contents.png)
 
+
+## Inverted pendulum System modelling
+
+
+## Two wheel robot system modelling System modelling
+
+
+## Two wheel robot with CMG system modelling
+
+
 ## Inverted pendulum Parameters
+
 |Symbol|Description|Value|
 |:---|:---|:---|
 |M|Mass of the cart (kg)|2|
@@ -21,30 +32,14 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 |r|Radius of the pendulum (m)|0.05|
 |g|Gravity (m/s^2)|9.81|
 
+## Two wheel robot with CMG Parameters
 
 
+## Control Design & Simulation
 
-
-
-## Control Design
 
 ### Proportional Integral Derivative (PID) Control
 
+### PID Tuning
 
-## Inverted pendulum 
 
-### System modelling
-
-### Simulation
-
-## Two wheel robot system modelling
-
-### System modelling
-
-### Simulation
-
-## Two wheel robot with CMG system modelling
-
-### System modelling
-
-### Simulation
