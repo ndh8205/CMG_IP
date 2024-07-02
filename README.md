@@ -12,8 +12,9 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ![RCTVC](Image/Inverted_pendulum_with_cart.png)
 
 Analyzing the system by dividing it into stick and cart
-**Newtons’ second law for the center of mass of a stick**
 
+**Newtons’ second law for the center of mass of a stick**
+\[\sum F_{x,m} = R_x = m \ddot{x}_m\]
 
 
 
