@@ -128,8 +128,10 @@ $u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - 
 
 ## Control Design & Simulation
 
-
 ### PID (Proportional Integral Derivative) Control
+
+![RCTVC](Image/PID.png)
+
 
 ### PID Tuning
 
