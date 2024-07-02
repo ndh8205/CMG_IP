@@ -180,6 +180,6 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 - $K_p = 30, K_i = 21, K_d = 3.825$
 
-![RCTVC](Image/PID _tuning.jpg)
+![RCTVC](Image/PID_tuning.jpg)
 
 **Figure 4:** Inverted Pendulum on Cart PID control
