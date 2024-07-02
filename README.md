@@ -24,6 +24,8 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 |r|Radius of the pendulum (m)|0.05|
 |I|Moment of inertia|$I = \frac{(mr^2)}{2}$|
 
+**Table 1: Inverted pendulum on cart Parameters**
+
 Analyzing the system by dividing it into stick and cart
 
 **Newtons’ second law for the center of mass of a stick**
@@ -91,6 +93,8 @@ $\ddot{x}$ and $\ddot{\theta}$ can be defined as:
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
 |$C_{\alpha}$|viscosity coefficient of the wheel|0.00055|
 
+**Table 2: Two wheel robot Parameters**
+
 Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the 'Two wheel robot' can be defined as follows($f_{\text{ext}}$ = external force):
 
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
@@ -150,6 +154,19 @@ The PID controller follows the equation below:
 As you can see in Figure 3, the PID system automatically apply accurate and responsive correction to a control funtion. To control a object using PID, u is the control input for controlling the object. For example, if you want to control the andgle, denoted as $\theta$, of an inverted pendulum, the error value $e(t)$ would be $e(t) = \theta_d - \theta$. By using the error value in **Equation 10**, you can get the control input u
 
 ### PID Tuning
+
+|Control Type|$K_p$|$K_i$|$K_d$|
+|---|---|---|---|
+|g|Gravity (m/s^2)|9.81|
+|M|Mass of the cart (kg)|2|
+|m|Mass of the pendulum (kg)|0.5|
+|L|Length of pendulum (m)|0.3|
+|$r_w$|Radius of the wheel (m)|0.03|
+|$r_b$|Radius of the robot body (m)|0.03|
+|$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
+|$C_{\alpha}$|viscosity coefficient of the wheel|0.00055|
+
+**Table 3:  Ziegler Nichols method**
 
 We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is a technique for obtaining gain value using an experimental optimization approach. I will show you how to perform PID tuning using the 'Inverted Pendulum on Cart' as described in **Equation 4**
 
