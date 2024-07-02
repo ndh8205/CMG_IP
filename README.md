@@ -89,6 +89,8 @@ Using the same method that we use to analyze the Inverted pendulum with cart, we
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
 |$f_ext$|external force|0.00055|
 
+The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows:
+
 $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
 **Equation 5**
