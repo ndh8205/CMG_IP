@@ -152,7 +152,7 @@ We will use Ziegler Nichols method for PID tuning. Ziegler Nichols method is a m
 1. Set ${K_i} , {K_d} = 0$, and find the value of constant amplitude through $K_p$ value. 
 The cycle is $T_u = 1.7$ and $K_p = K_u = 30$ 
 
-![RCTVC](Image/kp_tuning.png)
+![RCTVC](Image/kp_tuning.jpg)
 
 **Figure 4:** constant amplitude graph through ${K_p}$
 
