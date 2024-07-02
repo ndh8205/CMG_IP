@@ -159,5 +159,5 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 **Figure 4:** constant amplitude graph through ${K_p}$
 
-2. 
+2. If we organize **Equation 10** we can get 
 
