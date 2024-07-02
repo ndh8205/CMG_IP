@@ -155,7 +155,7 @@ As you can see in Figure 3, the PID system automatically apply accurate and resp
 
 ### PID Tuning
 
-|Control Type|$K_p$|$K_i$|$K_d$|
+|Control Type|$K_p$|$T_i$|$T_d$|
 |:---:|:---:|:---:|:---:|
 |P|$0.5K_u$|$\infty$|0|
 |PI|$0.45K_u$|$\frac{1}{1.2} T_u$|0|
