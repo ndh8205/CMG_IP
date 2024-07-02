@@ -85,7 +85,7 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 |$r_w$|Radius of the wheel (m)|0.03|
 |$r_b$|Radius of the robot body (m)|0.03|
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
-|$C_dot{a}$|external force|0.00055|
+|$C_{dot{a}}$|external force|0.00055|
 
 Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows:
 
