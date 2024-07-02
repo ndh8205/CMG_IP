@@ -11,9 +11,9 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ## Inverted pendulum with cart System modelling
 ![RCTVC](Image/Inverted_pendulum_with_cart.png)
 
-**Figure 1:** Inverted pendulum with cart
+**Figure 1:** Inverted pendulum on cart
 
-## Inverted pendulum with cart Parameters
+## Inverted pendulum on cart Parameters
 
 |Symbol|Description|Value|
 |:---|:---|:---|
@@ -46,7 +46,7 @@ $x_m = x - \frac{L}{2} \sin \theta$
 
 $y_m = \frac{L}{2} \cos \theta$
 
-The equation of motion that defines the dynamics of the "Inverted pendulum with cart" can be defined as follows: 
+The equation of motion that defines the dynamics of the "Inverted pendulum on cart" can be defined as follows: 
 
 $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
 
@@ -74,8 +74,6 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 **Figure 2:** Two wheel robot
 
-Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot 
-
 ## Two wheel robot Parameters
 
 |Symbol|Description|Value|
@@ -89,7 +87,7 @@ Using the same method that we use to analyze the Inverted pendulum with cart, we
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
 |$f_ext$|external force|0.00055|
 
-The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows:
+Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows:
 
 $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
