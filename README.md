@@ -130,7 +130,7 @@ $u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - 
 
 ### PID (Proportional Integral Derivative) Control
 
-A PID controller is basically known as feedback controller. PID controller can control continuously changing objects. PID controller continuously calculates an error value $e(t)$ wtich can be define as difference between desired point $(x_d)$ and a measured variable $(x)$
+A PID controller is basically known as feedback controller. PID controller can control continuously changing objects. PID controller continuously calculates the error value $e(t)$. It can be defined as the difference between desired point $x_d$ and a measured variable $x$ ($e(t) = x_d - x$). 
 
 ![RCTVC](Image/PID.png)
 
