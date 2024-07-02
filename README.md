@@ -85,7 +85,7 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 |$r_w$|Radius of the wheel (m)|0.03|
 |$r_b$|Radius of the robot body (m)|0.03|
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
-|$C_{\alpha}$|external force|0.00055|
+|$C_{\alpha}$|viscosity coefficient of the wheel|0.00055|
 
 Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows:
 
@@ -97,7 +97,7 @@ $F_w = (m_w + m_b) \ddot{x_w} + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m
 
 **Equation 6**
 
-To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Because of this, $x$ becomes the arc length of the circle, establishing the relationship $x=ra$.
+To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Because of this, $x$ becomes the arc length of the circle, establishing the relationship $x=ra$. ($f_{\text{ext}}$ = external force)
 
 $I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
 
