@@ -60,7 +60,7 @@ Summarize this equation in terms of $\ddot{x}$ and $\ddot{\theta}$ :
 
 $\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \frac{L}{2} m \cos \theta \cdot \ddot{\theta} \right]$
 
-$\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) \quad \quad \therefore a = I + \left( \frac{L}{2} \right)^2 m$
+$\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) / 2 \qquad  \therefore a = I + \left( \frac{L}{2} \right)^2 m$
 
 - $\ddot{x}$ is: 
 
