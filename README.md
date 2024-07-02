@@ -158,7 +158,7 @@ As you can see in Figure 3, the PID system automatically apply accurate and resp
 |Control Type|$K_p$|$K_i$|$K_d$|
 |:---:|:---:|:---:|:---:|
 |P|$0.5K_u$|inf|0|
-|PI|0.45$K_u$|$frac{1}{1.2} K_u$|0|
+|PI|0.45$K_u$|$\frac{1}{1.2} K_u$|0|
 |PID|0.5$K_u$|inf|0|
 
 
