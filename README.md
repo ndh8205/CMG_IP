@@ -62,13 +62,11 @@ Summarize this equation in terms of $\ddot{x}$ and $\ddot{\theta}$ :
 
 - $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) \qquad \qquad  \therefore a = I + \left( \frac{L}{2} \right)^2 m$
 
-$\ddot{x}$ can be defined as:
+$\ddot{x}$ and $\ddot{\theta}$ can be defined as:
 
 - $\ddot{x} = \frac{1}{b} \left[ Fa - a \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \left( \frac{L }{2} m \right)^2 g \sin \theta \cos \theta \right] \qquad \qquad \therefore b = a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^2 \theta$
 
 **Equation 3**
-
-$\ddot{y}$ can be defined as:
 
 - $\ddot{\theta} = \frac{1}{b} \left[ F \frac{L}{2} m \cos \theta - \left( \frac{L}{2} m \right)^2 \ sin \theta \cos \theta \cdot \dot{\theta}^2 + (M + m) \frac{L}{2} mg \sin \theta \right] $
 
