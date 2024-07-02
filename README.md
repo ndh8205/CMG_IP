@@ -143,7 +143,7 @@ $u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t )}{dt}$
 
 **Figure 3:** PID 
 
-As you can see in Figure 3, the PID system automatically apply accurate and responsive correction to a control funtion. 
+As you can see in Figure 3, the PID system automatically apply accurate and responsive correction to a control funtion. To control a object using PID, u is the control input for controlling the object. For example, if you want to control the andgle, denoted as $\theta$, of an inverted pendulum, the error value $e(t)$ would be $e(t) = \theta_d - \theta$. By using the error value in **Equation 10**, you can get the control input u
 
 
 ### PID Tuning
