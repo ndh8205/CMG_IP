@@ -195,3 +195,15 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 ![RCTVC](Image/simulation/Inverted_Pendulum_on_Cart_PID.jpg)
 
 **Figure 8:** Inverted Pendulum on Cart PID
+
+## Two wheel robot
+
+![RCTVC](Image/simulation/Two_wheel_robot_PD_comparison.jpg)
+
+**Figure 9:** Two wheel robot PD comparison
+
+![RCTVC](Image/simulation/Two_wheel_robot_PID_comparison.jpg)
+
+**Figure 10:** Two wheel robot PID comparison
+
+
