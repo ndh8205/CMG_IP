@@ -133,8 +133,7 @@ using **Equation 8**:
 
 ### Two wheel robot with CMG Parameters
 
-
-## Control Design & Simulation
+## PID Controller
 
 ### PID (Proportional Integral Derivative) Control
 
@@ -181,4 +180,18 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 ![RCTVC](Image/PID_tuning.jpg)
 
-**Figure 4:** Inverted Pendulum on Cart PID control
+**Figure 5:** Inverted Pendulum on Cart PID control
+
+## Inverted Pendulum on Cart Simulation
+
+![RCTVC](Image/Inverted_Pendulum_on_Cart_u0.jpg)
+
+**Figure 6:** Inverted Pendulum on Cart u0
+
+![RCTVC](Image/Inverted_Pendulum_on_Cart_PD.jpg)
+
+**Figure 7:** Inverted Pendulum on Cart PD
+
+![RCTVC](Image/Inverted_Pendulum_on_Cart_PID.jpg)
+
+**Figure 8:** Inverted Pendulum on Cart PID
