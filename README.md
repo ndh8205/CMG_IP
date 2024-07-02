@@ -97,7 +97,7 @@ $I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta -
 
 **Equation 5**
 
-$F_w = (m_w + m_b) \ddot{x}_w + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m_b \cos \theta \cdot \ddot{\theta} +f_{\text{ext}}$
+$F_w = (m_w + m_b) \ddot{x_w} + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m_b \cos \theta \cdot \ddot{\theta} +f_{\text{ext}}$
 
 To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
