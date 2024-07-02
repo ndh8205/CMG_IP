@@ -33,6 +33,14 @@ $x_m = x - \frac{L}{2} \sin \theta$
 
 $y_m = \frac{L}{2} \cos \theta$
 
+**Equation 1**
+
+$I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
+
+**Equation 2**
+
+$F = (M + m) \ddot{x} + \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 - \frac{L}{2} m \cos \theta \cdot \ddot{\theta}$
+
 ## Two wheel robot system modelling System modelling
 
 
