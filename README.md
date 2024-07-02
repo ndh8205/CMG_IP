@@ -46,7 +46,7 @@ $x_m = x - \frac{L}{2} \sin \theta$
 
 $y_m = \frac{L}{2} \cos \theta$
 
-The equation of motion that defines the dynamics of the "Inverted pendulum on cart" can be defined as follows: 
+The equation of motion that defines the dynamics of the "Inverted pendulum on cart" can be defined as: 
 
 $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
 
@@ -62,13 +62,13 @@ $\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\t
 
 $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) \qquad \qquad  \therefore a = I + \left( \frac{L}{2} \right)^2 m$
 
-- $\ddot{x}$ is: 
+- $\ddot{x}$ can be defined as:
 
 $\ddot{x} = \frac{1}{b} \left[ Fa - a \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \left( \frac{L }{2} m \right)^2 g \sin \theta \cos \theta \right] \qquad \qquad \therefore b = a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^2 \theta$
 
 **Equation 3**
 
-- $\ddot{y}$ is: 
+- $\ddot{y}$ can be defined as:
 
 $\ddot{\theta} = \frac{1}{b} \left[ F \frac{L}{2} m \cos \theta - \left( \frac{L}{2} m \right)^2 \ sin \theta \cos \theta \cdot \dot{\theta}^2 + (M + m) \frac{L}{2} mg \sin \theta \right] $
 
