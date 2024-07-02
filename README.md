@@ -115,7 +115,7 @@ $\tau_w = \left( m_w + m_b \right) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} +
 
 **Equation 8**
 
-If $f_{\text{ext}}$ is the viscous torque that occurs when the wheel rotates, we get the following equation by equation 8:
+If $f_{\text{ext}}$ is the viscous torque that occurs when the wheel rotates, we get the following equation by **Equation 8**:
 
 $u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_{\alpha} \dot{\alpha}$
 
