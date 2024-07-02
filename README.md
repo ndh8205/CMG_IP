@@ -156,15 +156,11 @@ As you can see in Figure 3, the PID system automatically apply accurate and resp
 ### PID Tuning
 
 |Control Type|$K_p$|$K_i$|$K_d$|
-|---|---|---|---|
-|g|Gravity (m/s^2)|9.81|
-|M|Mass of the cart (kg)|2|
-|m|Mass of the pendulum (kg)|0.5|
-|L|Length of pendulum (m)|0.3|
-|$r_w$|Radius of the wheel (m)|0.03|
-|$r_b$|Radius of the robot body (m)|0.03|
-|$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
-|$C_{\alpha}$|viscosity coefficient of the wheel|0.00055|
+|:---:|:---:|:---:|:---:|
+|P|0.5$K_u$|inf|0|
+|PI|0.45$K_u$|$frac{1}{1.2} K_u$|0|
+|PID|0.5$K_u$|inf|0|
+
 
 **Table 3:  Ziegler Nichols method**
 
