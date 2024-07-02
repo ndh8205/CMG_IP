@@ -101,6 +101,8 @@ To convert the above equation into an equation for the torque acting on the whee
 
 $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
+Linearizing equations 5 and 6 leads to the following equations:
+
 
 
 ## Two wheel robot with CMG system modelling
