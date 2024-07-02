@@ -14,10 +14,18 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 Analyzing the system by dividing it into stick and cart
 
 **Newtons’ second law for the center of mass of a stick**
+
 $\sum F_{x,m} = R_x = m \ddot{x}_m$
 
+$\sum F_{y,m} = R_y - mg = m \ddot{y}_m$
 
+**Torque equation for the center of mass of the stick**
 
+$\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
+
+**Newtons’ second law for cart movement in x direction**
+
+$\sum F_x = M \ddot{x} + m \ddot{x}_m = F$
 
 ## Two wheel robot system modelling System modelling
 
