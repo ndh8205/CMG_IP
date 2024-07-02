@@ -46,7 +46,7 @@ Analyzing the system by dividing it into stick and cart
 
 - $y_m = \frac{L}{2} \cos \theta$
 
-The equation of motion that defines the dynamics of the "Inverted pendulum on cart" can be defined as: 
+The equation of motion that defines the dynamics of the 'Inverted pendulum on cart' can be defined as: 
 
 - $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
 
@@ -91,7 +91,7 @@ $\ddot{x}$ and $\ddot{\theta}$ can be defined as:
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
 |$C_{\alpha}$|viscosity coefficient of the wheel|0.00055|
 
-Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows($f_{\text{ext}}$ = external force):
+Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the 'Two wheel robot' can be defined as follows($f_{\text{ext}}$ = external force):
 
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
