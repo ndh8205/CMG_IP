@@ -1,4 +1,4 @@
-
+![image](https://github.com/ndh8205/CMG_IP/assets/148195357/a9a41fc8-f27f-4888-bb14-12cfddbab5c6)
 ![RCTVC](Image/Main_page.png)
 ***
 ## Direct by Ruherpan
@@ -172,5 +172,5 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 **Figure 4:** constant amplitude graph through ${K_p}$
 
-2. If we organize **Equation 10** we can get 
+2. If we organize **Equation 10** we can get $K_i = \frac{K_p}{T_i}, ; K_d = K_p T_d$ and this can be defined as $K_i = 1.2 \frac{K_u}{T_u}, ; K_d = 0.075 K_u T_u$
 
