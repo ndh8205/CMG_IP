@@ -13,7 +13,7 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 
 **Figure 1:** Inverted pendulum on cart
 
-## Inverted pendulum on cart Parameters
+### Inverted pendulum on cart Parameters
 
 |Symbol|Description|Value|
 |:---|:---|:---|
@@ -74,7 +74,7 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 **Figure 2:** Two wheel robot
 
-## Two wheel robot Parameters
+### Two wheel robot Parameters
 
 |Symbol|Description|Value|
 |:---|:---|:---|
@@ -99,10 +99,7 @@ $\tau_w = (m_w + m_b) r \ddot{x}w + r l_b m_b \sin \theta \cdot \dot{\theta} ^2 
 
 ## Two wheel robot with CMG system modelling
 
-
-
-
-## Two wheel robot with CMG Parameters
+### Two wheel robot with CMG Parameters
 
 
 ## Control Design & Simulation
