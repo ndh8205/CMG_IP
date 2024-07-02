@@ -99,7 +99,7 @@ $F_w = (m_w + m_b) \ddot{x}_w + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l\ b 
 
 To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Because of this, $x$ becomes the arc length of the circle, establishing the relationship $x=ra$.
 
-$\tau_w = (m_w + m_b) r \ddot{x_w} + r l_b m_b \sin \theta \cdot \dot{\theta} ^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
+$\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
 
 
