@@ -47,6 +47,7 @@ $x_m = x - \frac{L}{2} \sin \theta$
 $y_m = \frac{L}{2} \cos \theta$
 
 The equation of motion that defines the dynamics of the "Inverted pendulum with cart" can be defined as follows: 
+
 $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
 
 **Equation 1**
