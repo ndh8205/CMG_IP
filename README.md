@@ -11,6 +11,16 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ## Inverted pendulum with cart System modelling
 ![RCTVC](Image/Inverted_pendulum_with_cart.png)
 
+## Inverted pendulum Parameters
+
+|Symbol|Description|Value|
+|:---|:---|:---|
+|M|Mass of the cart (kg)|2|
+|m|Mass of the pendulum (kg)|0.5|
+|L|Length of pendulum (m)|0.3|
+|r|Radius of the pendulum (m)|0.05|
+|g|Gravity (m/s^2)|9.81|
+
 Analyzing the system by dividing it into stick and cart
 
 **Newtons’ second law for the center of mass of a stick**
@@ -53,15 +63,7 @@ $\ddot{\theta} = \left( \frac{\frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} m
 ## Two wheel robot with CMG system modelling
 
 
-## Inverted pendulum Parameters
 
-|Symbol|Description|Value|
-|:---|:---|:---|
-|M|Mass of the cart (kg)|2|
-|m|Mass of the pendulum (kg)|0.5|
-|L|Length of pendulum (m)|0.3|
-|r|Radius of the pendulum (m)|0.05|
-|g|Gravity (m/s^2)|9.81|
 
 ## Two wheel robot with CMG Parameters
 
