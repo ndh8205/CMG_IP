@@ -41,6 +41,8 @@ $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \the
 
 $F = (M + m) \ddot{x} + \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 - \frac{L}{2} m \cos \theta \cdot \ddot{\theta}$
 
+Summarize this equation in terms of $ddot{x}$ and $ddot{\theta}$
+
 ## Two wheel robot system modelling System modelling
 
 
