@@ -64,13 +64,13 @@ $\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\t
 
 $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right)$
 
-$\ddot{x}$ is: 
+- $\ddot{x}$ is: 
 
 $\ddot{x} = \frac{1}{a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^2 \ \theta} \left[ Fa - a \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \left( \frac{L }{2} m \right)^2 g \sin \theta \cos \theta \right]$
 
 **Equation 3**
 
-$\ddot{y}$ is: 
+- $\ddot{y}$ is: 
 
 $\ddot{\theta} = \frac{1}{a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^ 2 \theta} \left[ F \frac{L}{2} m \cos \theta - \left( \frac{L}{2} m \right)^2 \ sin \theta \cos \theta \cdot \dot{\theta}^2 + (M + m) \frac{L}{2} mg \sin \theta \right] $
 
