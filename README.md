@@ -70,9 +70,9 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 ![RCTVC](Image/Two_wheel_robot.png)
 
-Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot 
-
 **Figure 2:** Two wheel robot
+
+Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot 
 
 ## Two wheel robot Parameters
 
@@ -85,7 +85,15 @@ Using the same method that we use to analyze the Inverted pendulum with cart, we
 |$r_w$|Radius of the wheel (m)|0.03|
 |$r_b$|Radius of the robot body (m)|0.03|
 |$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
-|$C_a$|external force|0.00055|
+|$f_ext$|external force|0.00055|
+
+$I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
+
+**Equation 5**
+
+$\tau_w = (m_w + m_b) r \ddot{x}w + r l_b m_b \sin \theta \cdot \dot{\theta} ^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f{\text{ext}}$
+
+**Equation 6**
 
 ## Two wheel robot with CMG system modelling
 
