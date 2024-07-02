@@ -17,11 +17,11 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 
 |Symbol|Description|Value|
 |:---|:---|:---|
+|g|Gravity (m/s^2)|9.81|
 |M|Mass of the cart (kg)|2|
 |m|Mass of the pendulum (kg)|0.5|
 |L|Length of pendulum (m)|0.3|
 |r|Radius of the pendulum (m)|0.05|
-|g|Gravity (m/s^2)|9.81|
 |I|Moment of inertia|$I = \frac{(mr^2)}{2}$|
 
 Analyzing the system by dividing it into stick and cart
@@ -68,11 +68,24 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 ## Two wheel robot system modelling System modelling
 
-Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot
-
 ![RCTVC](Image/Two_wheel_robot.png)
 
+Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot 
+
 **Figure 2:** Two wheel robot
+
+## Two wheel robot Parameters
+
+|Symbol|Description|Value|
+|:---|:---|:---|
+|g|Gravity (m/s^2)|9.81|
+|M|Mass of the cart (kg)|2|
+|m|Mass of the pendulum (kg)|0.5|
+|L|Length of pendulum (m)|0.3|
+|$r_w$|Radius of the wheel (m)|0.03|
+|$r_b$|Radius of the robot body (m)|0.03|
+|$I_b$|Moment of inertia of the robot body|$I = \frac{(m(r_b)^2)}{2}$|
+|$C_a$|external force|0.00055|
 
 ## Two wheel robot with CMG system modelling
 
