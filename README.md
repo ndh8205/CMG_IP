@@ -172,5 +172,11 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 **Figure 4:** constant amplitude graph through ${K_p}$
 
-2. If we organize **Equation 10** we can get $K_i = \frac{K_p}{T_i}, K_d = K_p T_d$ and this can be defined as $K_i = 1.2 \frac{K_u}{T_u}, ; K_d = 0.075 K_u T_u$
+2. If we organize **Equation 10** we can get $K_i = \frac{K_p}{T_i}, K_d = K_p T_d$ and this can be defined as: 
+
+- $K_i = 1.2 \frac{K_u}{T_u}, K_d = 0.075 K_u T_u$
+
+3. If we calculate the above equation, we can get $K_i$ and $K_d$
+
+- $K_p = 30, K_i = 21, K_d = 3.825$
 
