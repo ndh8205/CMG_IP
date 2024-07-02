@@ -91,28 +91,35 @@ Using the same method we use to analyze the Inverted pendulum on a cart, we can 
 
 $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
+Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
+
+$I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
+
 **Equation 5**
 
 $F_w = (m_w + m_b) \ddot{x_w} + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m_b \cos \theta \cdot \ddot{\theta} +f_{\text{ext}}$
 
-**Equation 6**
-
-To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Because of this, $x$ becomes the arc length of the circle, establishing the relationship $x=ra$. 
-
-$I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
-
-
-**Equation 7**
-
-If $f_{\text{ext}}$ is the viscous torque that occurs when the wheel rotates, we get the following equation:
+To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
 $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
-**Equation 8**
+**Equation 6**
 
 Linearizing equations 5 and 6 leads to the following equations:
 
+$\left( I_b + m_b l_b^2 \right) \ddot{\theta} = r l_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
 
+**Equation 7**
+
+$\tau_w = \left( m_w + m_b \right) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{\text{ext}}$
+
+**Equation 8**
+
+If $f_{\text{ext}}$ is the viscous torque that occurs when the wheel rotates, we get the following equation by equation 8:
+
+$u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_{\alpha} \dot{\alpha}$
+
+**Equation 9**
 
 ## Two wheel robot with CMG system modelling
 
