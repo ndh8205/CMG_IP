@@ -20,6 +20,7 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 |L|Length of pendulum (m)|0.3|
 |r|Radius of the pendulum (m)|0.05|
 |g|Gravity (m/s^2)|9.81|
+|I|Moment of inertia|$I = \frac{(mr^2)}{2}$|
 
 Analyzing the system by dividing it into stick and cart
 
