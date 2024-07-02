@@ -136,6 +136,8 @@ The PID controller follows the equation below:
 
 $u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t )}{dt}$ 
 
+**Equation 10**
+
 ![RCTVC](Image/PID.png)
 
 **Figure 3:** PID 
