@@ -93,7 +93,7 @@ $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _
 
 **Equation 5**
 
-$\tau_w = (m_w + m_b) r \ddot{x}w + r l_b m_b \sin \theta \cdot \dot{\theta} ^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
+$\tau_w = (m_w + m_b) r \ddot{x}_w + r l_b m_b \sin \theta \cdot \dot{\theta} ^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
 **Equation 6**
 
