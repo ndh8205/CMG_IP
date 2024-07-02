@@ -9,7 +9,7 @@ A Two wheel robot maintains stability by moving its wheels. The advantage of a T
 pendulum system is a classic example of an unstable system. It consists of a pendulum with its center of gravity above its central point, This means that without a balancing force, the system easily falls over. To achieve stability, control inputs must continuously adjust the system position to prevent the pendulum from falling due to gravity. This requires precise and responsive control mechanisms. After analyzing the inverted pendulum system, we can then analyze the Two wheel robot. By examining the Two wheel robot system, we can derive the equations for control inputs necessary to achieve stability. Once we define the control inputs for the Two wheel robot, we can use the Control Moment Gyro (CMG) to control the robot.
 
 ## Inverted pendulum with cart System modelling
-![RCTVC](Image/Inverted pendulum with cart.png)
+![RCTVC](Image/Inverted_pendulum_with_cart.png)
 Analyzing the system by dividing it into pendulum and cart
 
 
