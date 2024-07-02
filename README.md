@@ -149,6 +149,11 @@ As you can see in Figure 3, the PID system automatically apply accurate and resp
 
 We will use Ziegler Nichols method for PID tuning. Ziegler Nichols method is a method of obtaining gain value using experimental optimization technique. 
 
-1. ㅇㄴㄹㄴㅇㄹ
-2. 2.
+1. Set ${K_i} , {K_d} = 0$, and find the value of constant amplitude through $K_p$ value. 
+The cycle is $T_u = 1.7$ and $K_p = K_u = 30$ 
+![RCTVC](Image/kp_tuning.png)
+
+**Figure 4:** constant amplitude graph through ${K_p}$
+
+2. 
 
