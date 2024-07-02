@@ -93,11 +93,13 @@ $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _
 
 **Equation 5**
 
-$F_w = (m_w + m_b) \ddot{x}_w + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b\ m_b \cos \theta \cdot \ddot{\theta} + f{\text{ext}}$
+$F_w = (m_w + m_b) \ddot{x}_w + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b\ m_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
 **Equation 6**
 
 To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Because of this, $x$ becomes the arc length of the circle, establishing the relationship $x=ra$.
+
+$I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
 
 $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
