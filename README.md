@@ -1,4 +1,3 @@
-![image](https://github.com/ndh8205/CMG_IP/assets/148195357/a9a41fc8-f27f-4888-bb14-12cfddbab5c6)
 ![RCTVC](Image/Main_page.png)
 ***
 ## Direct by Ruherpan
