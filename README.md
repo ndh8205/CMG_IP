@@ -45,7 +45,7 @@ Summarize this equation in terms of $\ddot{x}$ and $\ddot{\theta}$
 
 $\ddot{x} = \left[ \frac{F - \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \frac{L}{2} m \cos \theta \cdot \ddot{\theta}}{(M + m)} \right]$
 
-$I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
+$I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$ 
 
 ## Two wheel robot system modelling System modelling
 
