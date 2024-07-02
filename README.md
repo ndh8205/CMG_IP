@@ -28,39 +28,39 @@ Analyzing the system by dividing it into stick and cart
 
 **Newtons’ second law for the center of mass of a stick**
 
-$\sum F_{x,m} = R_x = m \ddot{x}_m$
+- $\sum F_{x,m} = R_x = m \ddot{x}_m$
 
-$\sum F_{y,m} = R_y - mg = m \ddot{y}_m$
+- $\sum F_{y,m} = R_y - mg = m \ddot{y}_m$
 
 **Torque equation for the center of mass of the stick**
 
-$\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
+- $\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
 
 **Newtons’ second law for cart movement in x direction**
 
-$\sum F_x = M \ddot{x} + m \ddot{x}_m = F$
+- $\sum F_x = M \ddot{x} + m \ddot{x}_m = F$
 
 **Relationship between x and $x_m$**
 
-$x_m = x - \frac{L}{2} \sin \theta$
+- $x_m = x - \frac{L}{2} \sin \theta$
 
-$y_m = \frac{L}{2} \cos \theta$
+- $y_m = \frac{L}{2} \cos \theta$
 
 The equation of motion that defines the dynamics of the "Inverted pendulum on cart" can be defined as: 
 
-$I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
+- $I \ddot{\theta} = \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta - \left(\frac{L}{2}\right)^2 m \ddot{\theta}$
 
 **Equation 1**
 
-$F = (M + m) \ddot{x} + \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 - \frac{L}{2} m \cos \theta \cdot \ddot{\theta}$
+- $F = (M + m) \ddot{x} + \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 - \frac{L}{2} m \cos \theta \cdot \ddot{\theta}$
 
 **Equation 2**
 
 Summarize this equation in terms of $\ddot{x}$ and $\ddot{\theta}$ :
 
-$\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \frac{L}{2} m \cos \theta \cdot \ddot{\theta} \right]$
+- $\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \frac{L}{2} m \cos \theta \cdot \ddot{\theta} \right]$
 
-$\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) \qquad \qquad  \therefore a = I + \left( \frac{L}{2} \right)^2 m$
+- $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right) \qquad \qquad  \therefore a = I + \left( \frac{L}{2} \right)^2 m$
 
 $\ddot{x}$ can be defined as:
 
@@ -95,36 +95,36 @@ $\ddot{y}$ can be defined as:
 
 Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the "Two wheel robot" can be defined as follows($f_{\text{ext}}$ = external force):
 
-$I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
+- $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
-$I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
+- $I \ddot{\theta} = l_b m_b r \ddot{\alpha} \cos \theta + l_b m_b g \sin \theta - l_b ^2m_b \cdot \ddot{\theta}$
 
 **Equation 5**
 
-$F_w = (m_w + m_b) \ddot{x_w} + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m_b \cos \theta \cdot \ddot{\theta} +f_{\text{ext}}$
+- $F_w = (m_w + m_b) \ddot{x_w} + l_b m_b \sin \theta \cdot \dot{\theta}^2 - l_b m_b \cos \theta \cdot \ddot{\theta} +f_{\text{ext}}$
 
 To convert the above equation into an equation for the torque acting on the wheel, both sides must be multiplied by $r$. Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
-$\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
+- $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{\text{ext}}$
 
 **Equation 6**
 
 Linearizing equations 5 and 6 leads to the following equations:
 
-$\left( I_b + m_b l_b^2 \right) \ddot{\theta} = r l_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
+- $\left( I_b + m_b l_b^2 \right) \ddot{\theta} = r l_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
 
 **Equation 7**
 
-$\tau_w = \left( m_w + m_b \right) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{\text{ext}}$
+- $\tau_w = \left( m_w + m_b \right) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{\text{ext}}$
 
 **Equation 8**
 
 If $f_{\text{ext}}$ is the viscous torque that occurs when the wheel rotates, we get the following equation by 
 using **Equation 8**:
 
-$u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_{\alpha} \dot{\alpha}$
+- $u_{\alpha} = \left[ \left( m_w + m_b \right) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_{\alpha} \dot{\alpha}$
 
 **Equation 9**
 
@@ -141,7 +141,7 @@ A PID controller is basically known as feedback controller. PID controller can c
 
 The PID controller follows the equation below:
 
-$u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t )}{dt}$ 
+- $u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t )}{dt}$ 
 
 **Equation 10**
 
