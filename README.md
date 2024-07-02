@@ -64,7 +64,7 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 - $\ddot{x}$ is: 
 
-$\ddot{x} = \frac{1}{a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^2 \ \theta} \left[ Fa - a \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \left( \frac{L }{2} m \right)^2 g \sin \theta \cos \theta \right]$
+$\ddot{x} = \b \left[ Fa - a \frac{L}{2} m \sin \theta \cdot \dot{\theta}^2 + \left( \frac{L }{2} m \right)^2 g \sin \theta \cos \theta \right] \qquad \qquad \therefore b = a(M + m) - \left( \frac{L}{2} m \right)^2 \cos^2 \theta$
 
 **Equation 3**
 
