@@ -153,7 +153,7 @@ As you can see in Figure 3, the PID system automatically apply accurate and resp
 
 ### PID Tuning
 
-We will use Ziegler Nichols method for PID tuning. Ziegler Nichols method is a method of obtaining gain value using experimental optimization technique. I will show you how to do PID tuning by using "Inverted pendulum on cart"
+We will use Ziegler Nichols method for PID tuning. Ziegler Nichols method is a method of obtaining gain value using experimental optimization technique. I will show you how to PID tuning by using "Inverted pendulum on cart" **Equation 4**
 
 1. Set ${K_i} , {K_d} = 0$, and find the value of constant amplitude through $K_p$ value. The cycle is $T_u = 1.7$ and $K_p = K_u = 30$ 
 
