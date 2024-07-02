@@ -58,7 +58,7 @@ $\ddot{x} = \frac{1}{(M + m)} \left[ F - \frac{L}{2} m \sin \theta \cdot \dot{\t
 
 **Equation 3**
 
-a = I + \left( \frac{L}{2} \right)^2 m$
+$a = I + \left( \frac{L}{2} \right)^2 m$
 
 $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L}{2} mg \sin \theta \right)$
 
