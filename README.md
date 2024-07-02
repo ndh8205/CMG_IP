@@ -68,6 +68,8 @@ $\ddot{\theta} = \frac{1}{a} \left( \frac{L}{2} m \ddot{x} \cos \theta + \frac{L
 
 Using the same method that we use to analyze the Inverted pendulum with cart, we can derive the equation of a Two wheel robot
 
+![RCTVC](Image/Two_wheel_robot.png)
+
 ## Two wheel robot with CMG system modelling
 
 
