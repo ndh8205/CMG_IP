@@ -27,6 +27,8 @@ $\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\
 
 $\sum F_x = M \ddot{x} + m \ddot{x}_m = F$
 
+**Relationship between x and $x_m$**
+
 ## Two wheel robot system modelling System modelling
 
 
