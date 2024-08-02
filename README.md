@@ -217,7 +217,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ![RCTVC](Image/wheel.jpg)
 
-- $\sum F_x = m_w \ddot{x}{w} + m_b \ddot{x} + f_{ext} = F$
+- $\sum F_x = m_w \ddot{x_w}_ + m_b \ddot{x_b} + f_{ext} = F$
   
   $\therefore f_{ext} = \text{external force}$
   
