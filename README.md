@@ -201,6 +201,13 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 The dynamics of a Two wheel robot are not much different from an inverted pendulum, and its mechanism is based on an inverted pendulum.
 To analize Two wheel robot system, we follow the same process as for an inverted pendulum
 
+**Relationship between x and $x_m$**
+
+- $x_b = x - \frac{L}{b} \sin \theta$
+
+- $y_b = \frac{L}{b} \cos \theta$
+
+
 ![RCTVC](Image/simulation/Two_wheel_robot_PD.jpg)
 
 **Figure 9:** Two wheel robot PD 
