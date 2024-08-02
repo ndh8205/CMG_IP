@@ -208,10 +208,10 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 **Torque equation for the center of mass of the robot body**
 
-![RCTVC](Image/wheel.jpg)
 
 **Newton's second law for wheel movement in x direction**
 
+![RCTVC](Image/wheel.jpg)
 
 **Relationship between x and $x_m$**
 
