@@ -37,7 +37,7 @@ Analyzing the system by dividing it into stick and cart
 
 - $\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
 
-**Newtons’ second law for cart movement in x direction**
+**Newton's second law for cart movement in x direction**
 
 - $\sum F_x = M \ddot{x} + m \ddot{x}_m = F$
 
@@ -202,6 +202,15 @@ The dynamics of a Two wheel robot are not much different from an inverted pendul
 To analize Two wheel robot system, we follow the same process as for an inverted pendulum
 
 ![RCTVC](Image/Two_wheel_robot.png)
+
+**Newton's second law for robot bodies**
+
+
+**Torque equation for the center of mass of the robot body**
+
+
+**Newton's second law for wheel movement in x direction**
+
 
 **Relationship between x and $x_m$**
 
