@@ -229,6 +229,18 @@ At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alph
   
   $\therefore f_{ext} = \text{external force}$
 
+To convert the above equation into an equation for the torque acting on the wheel, multiply both sides by $r$.
+
+- $\tau_w = (m_w + m_b) r \ddot{x_w} + r l_b m_b \sin \theta \cdot \dot{\theta}^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f_{ext}$
+
+At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alpha$.
+
+- $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{ext}$
+  
+If we linearize the above equation, we get the following equation:
+
+- $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{ext}$
+
 **Relationship between x and $x_m$**
 
 - $x_b = x - \frac{L}{b} \sin \theta$
