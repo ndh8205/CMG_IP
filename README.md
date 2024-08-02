@@ -200,10 +200,10 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 ![RCTVC](Image/simulation/Two_wheel_robot_PD.jpg)
 
-**Figure 9:** Two wheel robot PD comparison
+**Figure 9:** Two wheel robot PD 
 
 ![RCTVC](Image/simulation/Two_wheel_robot_PID.jpg)
 
-**Figure 10:** Two wheel robot PID comparison
+**Figure 10:** Two wheel robot PID 
  
 
