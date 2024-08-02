@@ -217,7 +217,7 @@ If we linearize the above equation, we get the following equation:
 
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w + l_b m_b g \cdot \theta - l_b^2 m_b \cdot \ddot{\theta}$
 
-At this time, $\x$ is an arc of a circle, so it has the relationship x=r.
+At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alpha$.
 
 - $(I_b + m_b l_b^2) \cdot \ddot{\theta} = rl_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
 
