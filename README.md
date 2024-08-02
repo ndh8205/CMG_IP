@@ -203,6 +203,12 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ![RCTVC](Image/Two_wheel_robot.png)
 
+**Relationship between x and $x_m$**
+
+- $x_b = x - \frac{L}{b} \sin \theta$
+
+- $y_b = \frac{L}{b} \cos \theta$
+
 **Newton's second law for robot bodies**
 
 - $\sum F_{x, b} = R_x = m_b \left( \ddot{x}_w + l_b \sin \theta \cdot \dot{\theta}^2 - l_b \cos \theta \cdot \ddot{\theta} \right)$
@@ -240,12 +246,6 @@ At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alph
 If we linearize the above equation, we get the following equation:
 
 - $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{ext}$
-
-**Relationship between x and $x_m$**
-
-- $x_b = x - \frac{L}{b} \sin \theta$
-
-- $y_b = \frac{L}{b} \cos \theta$
 
 
 ![RCTVC](Image/simulation/Two_wheel_robot_PD.jpg)
