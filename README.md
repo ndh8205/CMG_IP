@@ -248,6 +248,11 @@ If we linearize the above equation, we get the following equation:
 - $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{ext}$
 
 
+**All torque u acting on the wheel $u_\alpha$**
+
+- $u_\alpha = \left[ (m_w + m_b) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_\alpha \dot{\alpha}$
+- 
+
 ![RCTVC](Image/simulation/Two_wheel_robot_PD.jpg)
 
 **Figure 9:** Two wheel robot PD 
