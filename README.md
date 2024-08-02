@@ -213,6 +213,14 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 - $\sum \tau = R_x l_b \cos \theta + R_y l_b \sin \theta = I_b \ddot{\theta}$
 
+If we linearize the above equation, we get the following equation:
+
+- $I \ddot{\theta} = l_b m_b \ddot{x}_w + l_b m_b g \cdot \theta - l_b^2 m_b \cdot \ddot{\theta}$
+
+At this time, $\x$ is an arc of a circle, so it has the relationship x=r.
+
+- $(I_b + m_b l_b^2) \cdot \ddot{\theta} = rl_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
+
 **Newton's second law for wheel movement in x direction**
 
 ![RCTVC](Image/wheel.jpg)
@@ -220,8 +228,6 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 - $\sum F_x = m_w \ddot{x_w}_ + m_b \ddot{x_b} + f_{ext} = F$
   
   $\therefore f_{ext} = \text{external force}$
-  
-
 
 **Relationship between x and $x_m$**
 
