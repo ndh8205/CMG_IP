@@ -85,41 +85,7 @@ hold on
 %%====================================== Parameters ======================================%%
 function params = Params_init() 
     % % PID 게인값 
-
-    %--------------- 동현이형이 튜닝한 gain값 ---------------%
-    % 
-    % params.Ka_p_wheel = 53;    
-    % params.Ka_i_wheel = 430;
-    % params.Ka_d_wheel = 0.08745;
-    % 
-    % params.Ka_p_gimbal = 8;   
-    % params.Ka_i_gimbal = 0;
-    % params.Ka_d_gimbal = 1; 
-    %---------------------------------------------------------%
-
-    %--------------- wheel과 gimbal합친 gain값 ---------------%
-    %
-    % params.Ka_p_wheel = 53;    
-    % params.Ka_i_wheel = 430;
-    % params.Ka_d_wheel = 0.08745;
-    
-    % params.Ka_p_gimbal = params.Ka_p_wheel;   
-    % params.Ka_i_gimbal = params.Ka_i_wheel;
-    % params.Ka_d_gimbal = params.Ka_d_wheel;
-    %---------------------------------------------------------%
-    
-    %---------------  wheel, gimbal gain값-1 ---------------%
-
-    % params.Ka_p_wheel = 60;   
-    % params.Ka_i_wheel = 600;
-    % params.Ka_d_wheel = 10; 
-    % 
-    % params.Ka_p_gimbal = 10;   
-    % params.Ka_i_gimbal = 92.14;
-    % params.Ka_d_gimbal = 0.2;
-    %---------------------------------------------------------%
-
-    %---------------  wheel, gimbal gain값-2 ---------------%
+    %---------------    wheel, gimbal gain값   ---------------%
 
     params.Ka_p_wheel = 70;   
     params.Ka_i_wheel = 350;
@@ -131,17 +97,7 @@ function params = Params_init()
     params.Ka_d_gimbal = 0.5; 
     %---------------------------------------------------------%
 
-    %---------------  wheel, gimbal gain값-3 ---------------%
 
-    % params.Ka_p_wheel = 60;   
-    % params.Ka_i_wheel = 0;
-    % params.Ka_d_wheel = 20; 
-    % 
-    % 
-    % params.Ka_p_gimbal = 20;   
-    % params.Ka_i_gimbal = 0;
-    % params.Ka_d_gimbal = 0; 
-    %---------------------------------------------------------%
 
     
     
