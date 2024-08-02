@@ -205,13 +205,21 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 **Newton's second law for robot bodies**
 
+- $\sum F_{x, b} = R_x = m_b \left( \ddot{x}_w + l_b \sin \theta \cdot \dot{\theta}^2 - l_b \cos \theta \cdot \ddot{\theta} \right)$
+  
+- $\sum F_{y, b} = R_y = m_b \left( g - l_b \cos \theta \cdot \dot{\theta}^2 - l_b \sin \theta \cdot \ddot{\theta} \right)$
 
 **Torque equation for the center of mass of the robot body**
 
+- $\sum \tau = R_{x, b} l_b \cos \theta + R_{y, b} l_b \sin \theta = I_b \ddot{\theta}$
 
 **Newton's second law for wheel movement in x direction**
 
 ![RCTVC](Image/wheel.jpg)
+
+- $\sum F_x = m_w \ddot{x}_w + m_b \ddot{x}_b + f_{ext} = F$
+-  $\therefore f_{ext} = \text{external force}$
+
 
 **Relationship between x and $x_m$**
 
