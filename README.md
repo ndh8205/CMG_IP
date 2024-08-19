@@ -7,6 +7,8 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ![RCTVC](Image/Robot.png)
 
+**Figure 1:** Robot
+
 **Relationship between x and $x_b$**
 
 - $x_b = x + \frac{L}{2} \sin \theta$
