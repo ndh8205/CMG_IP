@@ -41,49 +41,13 @@ if we slove this equation, we can get the equation of Torque for the center of m
 
 - $\left(I_b + m_b l^2\right) \ddot{\theta} = m_b g l \sin \theta - m_b l \cos \theta \cdot \ddot{x} - \tau + f_b l \cos \theta$
 
-If we linearize the above equation and then organize it into equations for - $\ddot{x}$ and $\ddot{\theta}$, we get the following equation :
+If we linearize the above equation and then organize it into equations for $\ddot{x}$ and $\ddot{\theta}$, we get the following equation :
 
 $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l^2$ , $Q = m_b l$
 
-- $I \ddot{\theta} = l_b m_b \ddot{x}_w + l_b m_b g \cdot \theta - l_b^2 m_b \cdot \ddot{\theta}$
+- $\ddot{x} = \frac{1}{Z} Q^2 g \theta + \frac{1}{Z} \left( \frac{QP}{r} \right) \tau$
 
-At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alpha$.
+- $\ddot{\theta} = -\frac{1}{Z} WQg \theta + \frac{1}{Z} \left( \frac{Q}{r} + W \right) \tau$
 
-- $(I_b + m_b l_b^2) \cdot \ddot{\theta} = rl_b m_b \ddot{\alpha} + l_b m_b g \cdot \theta$
-
-**Newton's second law for wheel movement in x direction**
-
-![RCTVC](Image/wheel.jpg)
-
-- $\sum F_x = m_w \ddot{x_w}_ + m_b \ddot{x_b} + f_{ext} = F$
-  
-  $\therefore f_{ext} = \text{external force}$
-
-To convert the above equation into an equation for the torque acting on the wheel, multiply both sides by $r$.
-
-- $\tau_w = (m_w + m_b) r \ddot{x_w} + r l_b m_b \sin \theta \cdot \dot{\theta}^2 - r l_b m_b \cos \theta \cdot \ddot{\theta} + f_{ext}$
-
-At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alpha$.
-
-- $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} + r m_b l_b \sin \theta \cdot \dot{\theta}^2 - r m_b l_b \cos \theta \cdot \ddot{\theta} + f_{ext}$
-  
-If we linearize the above equation, we get the following equation:
-
-- $\tau_w = (m_w + m_b) r^2 \ddot{\alpha} - r m_b l_b \ddot{\theta} + f_{ext}$
-
-
-**All torque u acting on the wheel $u_\alpha$**
-
-- $u_\alpha = \left[ (m_w + m_b) r^2 + I_w \right] \ddot{\alpha} - r m_b l_b \ddot{\theta} + C_\alpha \dot{\alpha}$
-
-  $\therefore f_{ext} = \mu \cdot \omega = C_\alpha \dot{\alpha}$
-
-![RCTVC](Image/simulation/Two_wheel_robot_PD.jpg)
-
-**Figure 9:** Two wheel robot PD 
-
-![RCTVC](Image/simulation/Two_wheel_robot_PID.jpg)
-
-**Figure 10:** Two wheel robot PID 
  
 
