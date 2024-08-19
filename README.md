@@ -29,17 +29,17 @@ Analyzing the system by dividing it into stick and cart
 
 **Newtons’ second law for the center of mass of a stick**
 
-- $\sum F_{x,m} = R_x = m \ddot{x}_m$
+- $\sum F_{x,m}: R_x = m \ddot{x}_m$
 
-- $\sum F_{y,m} = R_y - mg = m \ddot{y}_m$
+- $\sum F_{y,m}: R_y - mg = m \ddot{y}_m$
 
 **Newton's second law for cart movement in x direction**
 
-- $\sum F_x = M \ddot{x} + R_x = F$
+- $\sum F_x: M \ddot{x} + R_x = F$
 
 **Torque equation for the center of mass of the stick**
 
-- $\sum \tau = R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
+- $\sum \tau: R_x \frac{L}{2} \cos\theta + R_y \frac{L}{2} \sin\theta = I \ddot{\theta}$
 
 **Relationship between x and $x_m$**
 
