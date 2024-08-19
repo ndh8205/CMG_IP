@@ -105,13 +105,11 @@ Using the same method we use to analyze the Inverted pendulum on a cart, we can 
 **Newton's second law for cart movement in x direction**
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
-- $\left( M_W + M_p + \frac{J_W}{r^2} \right) \ddot{x} + M_p l \cos \theta \, \ddot{\theta} - M_p l \sin \theta \, \dot{\theta}^2 = f_W + f_p + \frac{1}{r} \tau$
+- $ \left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_j l \sin \theta \cdot \dot{\theta}^2 - m_j l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w $
 
 **Torque equation for the center of mass of the Robot**
 
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
-
-
 
 **Equation 5**
 
