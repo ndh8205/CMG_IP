@@ -1,3 +1,5 @@
+import numpy as np
+
 ## Two wheel robot
 
 The dynamics of a Two wheel robot are not much different from an inverted pendulum, and its mechanism is based on an inverted pendulum.
@@ -50,8 +52,6 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 - $\ddot{\theta} = -\frac{1}{Z} WQg \theta + \frac{1}{Z} \left( \frac{Q}{r} + W \right) \tau$
 
 **Equation of state**
-
-import numpy as np
 
 x = np.array([x, x_dot, theta, theta_dot])
 print("Vector x:")
