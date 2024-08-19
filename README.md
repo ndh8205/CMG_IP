@@ -53,42 +53,11 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 **Equation of state**
 
-x = np.array([x, x_dot, theta, theta_dot])
-print("Vector x:")
-print(x)
-
+![RCTVC](Image/x_matrix.png)
 
 - $\dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B} \mathbf{u}$
 
 The state matrix is ​​as follows:
 
-- \[
-\begin{bmatrix}
-\dot{x} \\
-\ddot{x} \\
-\dot{\theta} \\
-\ddot{\theta}
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 & 1 & 0 & 0 \\
-0 & 0 & \frac{Q^2}{Z}g & 0 \\
-0 & 0 & 0 & 1 \\
-0 & 0 & -\frac{WQ}{Z}g & 0
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-\dot{x} \\
-\theta \\
-\dot{\theta}
-\end{bmatrix}
-+
-\begin{bmatrix}
-0 \\
-\frac{QP}{Hr} \\
-0 \\
-\frac{Q}{Hr} + W
-\end{bmatrix}
-\tau
-\]
+![RCTVC](Image/state_matrix.png)
 
