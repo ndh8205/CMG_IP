@@ -53,7 +53,7 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 **Equation of state**
 
-<img src="Image/x_matrix.png" alt="RCTVC" height="25" />
+<img src="Image/x_matrix.png" alt="RCTVC" height="30" />
 
 - $\dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B} \mathbf{u}$
 
