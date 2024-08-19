@@ -11,9 +11,18 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 - $y_b = \frac{L}{2} \cos \theta$
 
+Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
+
+**Horizontal reaction force of the wheel**
+
+- $H_w r = \tau - I_w \ddot{\alpha}$
+
+**Translational movement of the wheel**
+
+- $m_w \ddot{x} = b \dot{x} + R_x + H_w$
+
 **Newton's second law for cart movement in x direction**
 
-Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
 - $\left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_b l \sin \theta \cdot \dot{\theta}^2 - m_b l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w$
 
