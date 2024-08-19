@@ -5,21 +5,21 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ![RCTVC](Image/Robot.png)
 
-**Relationship between x and $x_m$**
+**Relationship between x and $x_b$**
 
-- $x_b = x - \frac{L}{b} \sin \theta$
+- $x_b = x + \frac{L}{2} \sin \theta$
 
-- $y_b = \frac{L}{b} \cos \theta$
+- $y_b = \frac{L}{2} \cos \theta$
 
-**Newton's second law for robot bodies**
+**Newton's second law for cart movement in x direction**
 
-- $ \left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_j l \sin \theta \cdot \dot{\theta}^2 - m_j l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w $
-  
-- $\sum F_{y, b} = R_y = m_b \left( g - l_b \cos \theta \cdot \dot{\theta}^2 - l_b \sin \theta \cdot \ddot{\theta} \right)$
+Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
 
-**Torque equation for the center of mass of the robot body**
+- $\left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_b l \sin \theta \cdot \dot{\theta}^2 - m_b l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w$
 
-- $\sum \tau = R_x l_b \cos \theta + R_y l_b \sin \theta = I_b \ddot{\theta}$
+**Torque equation for the center of mass of the Robot**
+
+- $I_b \ddot{\theta} = R_x l \cos \theta + R_y l \sin \theta - \tau$
 
 If we linearize the above equation, we get the following equation:
 
