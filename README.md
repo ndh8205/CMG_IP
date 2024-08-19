@@ -3,7 +3,7 @@
 The dynamics of a Two wheel robot are not much different from an inverted pendulum, and its mechanism is based on an inverted pendulum.
 To analize Two wheel robot system, we follow the same process as for an inverted pendulum
 
-![RCTVC](Image/Two_wheel_robot.png)
+![RCTVC](Image/Robot.png)
 
 **Relationship between x and $x_m$**
 
