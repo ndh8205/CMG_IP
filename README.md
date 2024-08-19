@@ -49,5 +49,41 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 - $\ddot{\theta} = -\frac{1}{Z} WQg \theta + \frac{1}{Z} \left( \frac{Q}{r} + W \right) \tau$
 
- 
+**Equation of state**
+
+- $\mathbf{x} = \begin{bmatrix} x & \dot{x} & \theta & \dot{\theta} \end{bmatrix}^T$
+  
+- $\dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B} \mathbf{u}$
+
+The state matrix is ​​as follows:
+
+- \[
+\begin{bmatrix}
+\dot{x} \\
+\ddot{x} \\
+\dot{\theta} \\
+\ddot{\theta}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{Q^2}{Z}g & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & -\frac{WQ}{Z}g & 0
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+\dot{x} \\
+\theta \\
+\dot{\theta}
+\end{bmatrix}
++
+\begin{bmatrix}
+0 \\
+\frac{QP}{Hr} \\
+0 \\
+\frac{Q}{Hr} + W
+\end{bmatrix}
+\tau
+\]
 
