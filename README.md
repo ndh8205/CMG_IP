@@ -43,6 +43,8 @@ if we slove this equation, we can get the equation of Torque for the center of m
 
 If we linearize the above equation, we get the following equation:
 
+- $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l^2$ , $Q = m_b l$
+
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w + l_b m_b g \cdot \theta - l_b^2 m_b \cdot \ddot{\theta}$
 
 At this time, $x$ is an arc of a circle, so it has the relationship $x = r \alpha$.
