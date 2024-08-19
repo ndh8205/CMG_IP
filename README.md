@@ -19,7 +19,7 @@ Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get t
 
 **Translational movement of the wheel**
 
-- $m_w \ddot{x} = b \dot{x} + R_x + H_w$
+- $m_w \ddot{x} = f_w + R_x + H_w$
 
 **Newton's second law for cart movement in x direction**
 
