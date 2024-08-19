@@ -23,14 +23,23 @@ $\therefore H_w$ : Reaction force in the horizontal direction of the wheel
 
 - $m_w \ddot{x} = f_w + R_x + H_w$
 
-**Newton's second law for cart movement in x direction**
+As we obtained from the inverted pendulum, we get the following equation:
 
+- $R_x = f_b - m_b \ddot{x}_b$
+
+- $R_y = m_b \ddot{y}_b + m_b g$
+  
+**Newton's second law for cart movement in x direction**
 
 - $\left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_b l \sin \theta \cdot \dot{\theta}^2 - m_b l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w$
 
 **Torque equation for the center of mass of the Robot**
 
 - $I_b \ddot{\theta} = R_x l \cos \theta + R_y l \sin \theta - \tau$
+
+if we slove this equation, we can get the equation of Torque for the center of mass of the Robot
+
+- $\left(I_b + m_b l^2\right) \ddot{\theta} = m_b g l \sin \theta - m_b l \cos \theta \cdot \ddot{x} - \tau + f_b l \cos \theta$
 
 If we linearize the above equation, we get the following equation:
 
