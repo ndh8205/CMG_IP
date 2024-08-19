@@ -15,7 +15,7 @@ Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get t
 
 **Horizontal reaction force of the wheel**
 
-- $H_w r = \tau - I_w \ddot{\alpha}$
+- $I_w \ddot{\alpha} = \tau - H_w r $
 
 **Translational movement of the wheel**
 
