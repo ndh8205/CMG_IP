@@ -110,7 +110,7 @@ Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get t
 
 **Torque equation for the center of mass of the Robot**
 
-- $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
+- $I_b \ddot{\theta} = R_x l \cos \theta + R_y l \sin \theta - \tau$
 
 **Equation 5**
 
