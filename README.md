@@ -120,3 +120,17 @@ We will use Ziegler Nichols method for PID tuning. The Ziegler Nichols method is
 
 **Figure 4:** Inverted Pendulum on Cart PID control
 
+## Inverted Pendulum on Cart Simulation
+
+![RCTVC](Image/simulation/Inverted_Pendulum_on_Cart_u0.jpg) 
+
+**Figure 5:** Inverted Pendulum on Cart u0
+
+![RCTVC](Image/simulation/Inverted_Pendulum_on_Cart_PD.jpg)
+
+**Figure 6:** Inverted Pendulum on Cart PD
+
+![RCTVC](Image/simulation/Inverted_Pendulum_on_Cart_PID.jpg) 
+
+**Figure 7:** Inverted Pendulum on Cart PID
+
