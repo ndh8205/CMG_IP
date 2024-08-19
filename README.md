@@ -96,6 +96,12 @@ $\ddot{x}$ and $\ddot{\theta}$ can be defined as:
 
 Using the same method we use to analyze the Inverted pendulum on a cart, we can derive the equation of a Two wheel robot. The equation of motion that defines the dynamics of the 'Two wheel robot' can be defined as follows($f_{\text{ext}}$ = external force):
 
+**Relationship between x and $x_m$**
+
+- $x_m = x + \frac{L}{2} \sin \theta$
+
+- $y_m = \frac{L}{2} \cos \theta$
+
 - $I \ddot{\theta} = l_b m_b \ddot{x}_w \cos \theta + l_b m_b g \sin \theta - l\ _b^2m_b \cdot \ddot{\theta}$
 
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation:
