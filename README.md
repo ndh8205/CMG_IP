@@ -59,5 +59,5 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 The state matrix is ​​as follows:
 
-![RCTVC](Image/state_matrix.png)
+<img src="Image/state_matrix.png" alt="RCTVC" width="500" height="300" />
 
