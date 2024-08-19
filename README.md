@@ -222,7 +222,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 **Newton's second law for robot bodies**
 
-- $\sum F_{x, b} = R_x = m_b \left( \ddot{x}_w + l_b \sin \theta \cdot \dot{\theta}^2 - l_b \cos \theta \cdot \ddot{\theta} \right)$
+- $ \left( m_w + m_b + \frac{I_w}{r^2} \right) \ddot{x} = m_j l \sin \theta \cdot \dot{\theta}^2 - m_j l \cos \theta \cdot \ddot{\theta} + \frac{\tau}{r} + f_w $
   
 - $\sum F_{y, b} = R_y = m_b \left( g - l_b \cos \theta \cdot \dot{\theta}^2 - l_b \sin \theta \cdot \ddot{\theta} \right)$
 
