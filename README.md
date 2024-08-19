@@ -51,12 +51,13 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 **Equation of state**
 
-- \begin{bmatrix}
-\cos\gamma \sin\beta & \cos\gamma \sin\beta \sin\alpha - \sin\gamma \cos\alpha & \cos\gamma \sin\beta \cos\alpha + \sin\gamma \sin\alpha \\
-\cos\beta \sin\gamma & \cos\gamma \sin\beta \sin\alpha + \cos\gamma \cos\alpha & \cos\gamma \sin\beta \cos\alpha - \cos\gamma \sin\alpha \\
--\sin\beta & \sin\gamma \cos\beta & \cos\beta \cos\alpha
-\end{bmatrix}
-  
+import numpy as np
+
+x = np.array([x, x_dot, theta, theta_dot])
+print("Vector x:")
+print(x)
+
+
 - $\dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B} \mathbf{u}$
 
 The state matrix is ​​as follows:
