@@ -75,7 +75,7 @@ $\ddot{x}$ and $\ddot{\theta}$ can be defined as:
 
 ## Two wheel robot system modelling System modelling
 
-![RCTVC](Image/Two_wheel_robot.png)
+![RCTVC](Image/Robot.pdf)
 
 **Figure 2:** Two wheel robot
 
