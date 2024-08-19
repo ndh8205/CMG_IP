@@ -1,7 +1,7 @@
 ![RCTVC](Image/Main_page.png)
 ***
 ## Direct by Ruherpan
-
+ 
 ## Intro
 
 A Two wheel robot maintains stability by moving its wheels. The advantage of a Two wheel robot is its ability to perform a pivot turn, allowing it to turn with a zero turning radius. However, before analyzing Two wheel robot, we must first understand how to control an inverted pendulum system, which is inherently unstable, to achieve stability. The inverted
