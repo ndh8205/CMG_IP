@@ -63,3 +63,5 @@ The state matrix is ​​as follows:
 
 <img src="Image/state_matrix.png" alt="RCTVC" height="170" />
 
+**Figure 2:** Robot u0
+
