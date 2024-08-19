@@ -13,7 +13,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation: 
 
-$ \therefore H_w$ : Reaction force in the horizontal direction of the wheel
+$\therefore H_w$ : Reaction force in the horizontal direction of the wheel
 
 **Horizontal reaction force of the wheel**
 
