@@ -12,6 +12,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 - $y_b = \frac{L}{2} \cos \theta$
 
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation: 
+
 $\therefore H_w$: Repulsion force in the horizontal direction of the wheel
 
 **Horizontal reaction force of the wheel**
