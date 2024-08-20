@@ -6,4 +6,4 @@ There are several ways to track trajectories, but for this page we will use PID 
 
 ## Trajectory tracking
 
-To track trajectories we need to 
+
