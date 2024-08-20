@@ -164,4 +164,11 @@ The Relationship between x and y
 
 - $z = l_f \cos \theta$
 
-The kinetic energy of a rigid body is $\boldsymbol{T} = \frac{1}{2} m \boldsymbol{v}^2 = \frac{1}{2} m_f \left(v_x^2 + v_y^2 + v_z^2\right)$. However, as shown in Figure 3, $v_x = 0$, so $\boldsymbol{T} = \frac{1}{2} m_f \left(v_y^2 + v_z^2\right)$
+The kinetic energy of a rigid body is $\boldsymbol{T} = \frac{1}{2} m \boldsymbol{v}^2 = \frac{1}{2} m_f \left(v_x^2 + v_y^2 + v_z^2\right)$. However, as shown in Figure 3, $v_x = 0$, so $\boldsymbol{T} = \frac{1}{2} m_f \left(v_y^2 + v_z^2\right)$. Therefore, the kinetic energy can be obtained as:
+
+- $\boldsymbol{T} = \frac{1}{2} m_f \left[ \left(r \dot{\alpha}\right)^2 + 2r \dot{\alpha} l_f \cos \theta \cdot \dot{\theta} + \left(l_f \cos \theta \cdot \dot{\theta}\right)^2 + \left(l_f \sin \theta \cdot \dot{\theta}\right)^2 \right]$
+
+The total flywheel kinetic energy is: 
+
+- $K_f = \frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2 + \frac{1}{2} m_f l_f^2 \dot{\theta}^2 + m_f \dot{\alpha} r l_f \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_f \left( r \dot{\alpha} \right)^2$
+
