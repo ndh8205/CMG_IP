@@ -121,4 +121,16 @@ where K and U are:
 
 - $U = U_f + U_g + U_b + U_w$
 
+Potential energy is easy to find, because potential energy formula is about high. potential energy formula is obtained as:
+
+- $U_f = m_f g l_f \cos \theta$
+
+- $U_g = m_g g \left(l_f - l_g \cos \varphi \right) \cos \theta$
+
+- $U_b = m_b g l_b \cos \theta$
+
+- $U_w = m_w g r$
+
+
+
 
