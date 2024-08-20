@@ -67,7 +67,7 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 **Equation of state**
 
-<img src="Image/x_matrix.png" alt="RCTVC" height="30" />
+<img src="Image/CMG_robot_Image/inertial.png" alt="RCTVC" style="width: 20%;" />
 
 - $\dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B} \mathbf{u}$
 
