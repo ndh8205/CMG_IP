@@ -7,7 +7,19 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ![RCTVC](Image/Robot.png)
 
-**Figure 1:** Robot
+**Figure 1:** Two wheel robot
+
+|Symbol|Description|Value|
+|:---|:---|:---|
+|g|Gravity (m/s^2)|9.81|
+|M|Robot mass (kg)|2|
+|m|Wheel mass (kg)|0.5|
+|r|Wheel radius (m)|0.03|
+|L|Length of pendulum (m)|0.3|
+|I|Moment of inertia|$I = \frac{(mr^2)}{2}$|
+|$f_w$|external force acting on the wheel|0.003|
+
+**Table 1: Two wheel robot Parameters**
 
 **Relationship between x and $x_b$**
 
