@@ -1,7 +1,9 @@
-## Two wheel robot
+## Intro
 
 The dynamics of a Two wheel robot are not much different from an inverted pendulum, and its mechanism is based on an inverted pendulum.
 To analize Two wheel robot system, we follow the same process as for an inverted pendulum
+
+## Two wheel robot
 
 ![RCTVC](Image/Robot.png)
 
