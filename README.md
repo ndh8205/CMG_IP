@@ -156,3 +156,7 @@ To get the rotational kinetic energy, we need to add the above three matrices. (
 
 - $\frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2$
 
+<img src="Image/CMG_robot_Image/CMG_Robot1.png" alt="RCTVC" style="width: 60%;" />
+
+**Figure 4:** Model of two wheel robot
+
