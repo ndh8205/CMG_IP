@@ -107,5 +107,5 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 
 **flywheel coordinate**
 
-<img src="Image/CMG_robot_Image/flywheel_coordinate.png" alt="RCTVC" style="width: 15%;" />
+<img src="Image/CMG_robot_Image/flywheel_coordinate.png" alt="RCTVC" style="width: 10%;" />
 
