@@ -91,6 +91,6 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 
 <img src="Image/CMG_robot_Image/inertial.png" alt="RCTVC" style="width: 20%;" />
 
-<img src="Image/CMG_robot_Image/CMG_DCM.png" alt="RCTVC" style="width: 70%;" />
+<img src="Image/CMG_robot_Image/CMG_DCM.png" alt="RCTVC" style="width: 80%;" />
 
 
