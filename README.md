@@ -115,7 +115,7 @@ To find Euler-Lagrange equations, we need to find the Lagrangian. Lagrangian is 
 
 - $L = K - U$
 
-where K and U is:
+where K and U are:
 
 - $K = K_f + K_g + K_b + K_w$
 
