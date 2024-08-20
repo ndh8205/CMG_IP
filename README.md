@@ -131,6 +131,8 @@ Potential energy is easy to find, because potential energy formula is about high
 
 - $U_w = m_w g r$
 
-Now let's find kinetic energy formula
+Now let's find kinetic energy formula.
+
+The kinetic energy of an object can be divided into two types of energy: rotational kinetic energy and kinetic energy. If we can find the two energies, we can get the kinetic energy of the object by adding the rotational kinetic energy to the kinetic energy.
 
 
