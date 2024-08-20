@@ -73,7 +73,7 @@ $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l
 
 The state matrix is ​​as follows:
 
-<img src="Image/state_matrix.png" alt="RCTVC" style="width: 20%;" />
+<img src="Image/state_matrix.png" alt="RCTVC" style="width: 35%;" />
 
 ## Robot Simulation
 
