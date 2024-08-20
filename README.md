@@ -15,6 +15,14 @@ If you know the two states mentioned above, tracking the trajectory is simple. F
 
 **Figure 1:** Trajectory tracking
 
+As shown in Figure 1, we can define direction d as:
+
+- $d = \sqrt{(x_d - x)^2 + (y_d - y)^2}$
+
+Heading angle $/theta$ as:
+
+- $\theta = \tan^{-1} \left(\frac{y_d - y}{x_d - x}\right)$
+
 <img src="Image/Trajectory_tracking/Trajectory_tracking_PID.png" alt="RCTVC" style="width: 100%;" />
 
 **Figure 2:** Trajectory tracking using PID
