@@ -85,7 +85,7 @@ The state matrix is ​​as follows:
 
 To analyze a Two wheeled robot posture stability control system using CMG, a Direction Cosine Matrix (DCM) must be defined. After difining DCM we analyze the CMG using the Euler-Lagrange equation. Analyzing the system using the Euler-Lagrange equations is less complex than analyzing it using Newton's laws. You only need to solve the equations for kinetic and potential energy.
 
-![RCTVC](Image/CMG_Robot.png)
+![RCTVC](Image/CMG_robot_Image/CMG_Robot.png)
 
 **Figure 3:** Model of Two wheeled robot posture stability control using CMG
 
