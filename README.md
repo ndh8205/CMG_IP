@@ -170,5 +170,5 @@ The kinetic energy of a rigid body is $\boldsymbol{T} = \frac{1}{2} m \boldsymbo
 
 The total flywheel kinetic energy is: 
 
-- $K_f = \frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2 + \frac{1}{2} m_f l_f^2 \dot{\theta}^2 + m_f \dot{\alpha} r l_f \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_f \left( r \dot{\alpha} \right)^2$
+- $K_f = \frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2 + \frac{1}{2} m_f l_f^2 \dot{\theta} + m_f \dot{\alpha} r l_f \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_f \left( r \dot{\alpha} \right)^2$
 
