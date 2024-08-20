@@ -135,4 +135,8 @@ Now let's find kinetic energy formula.
 
 The kinetic energy of an object can be divided into two types of energy: rotational kinetic energy and kinetic energy. If we can find the two energies, we can get the kinetic energy of the object by adding the rotational kinetic energy to the kinetic energy.
 
+For example, let's find the rotational kinetic energy of flywheel.
+
+Flywheel coordinates have the same coordinates as gimbal coordinates. Angular velocity coordinate relationship between robot and gimbal
+
 
