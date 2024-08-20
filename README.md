@@ -7,3 +7,6 @@ There are several ways to track trajectories, but for this page we will use PID 
 ## Trajectory tracking
 
 <img src="Image/Trajectory_tracking/Trajectory_tracking_PID.png" alt="RCTVC" style="width: 100%;" />
+
+
+**Figure 1:** Trajectory tracking using PID
