@@ -145,5 +145,5 @@ The angular velocity coordinate relationship between the robot and the gimbal is
 
 The gimbal angular velocity is obtained as:
 
-<img src="Image/CMG_robot_Image/Gimbal_Angular_velocity.png" alt="RCTVC" style="width: 20%;" />
+<img src="Image/CMG_robot_Image/Gimbal_Angular_velocity.png" alt="RCTVC" style="width: 15%;" />
 
