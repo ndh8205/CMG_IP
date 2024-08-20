@@ -188,13 +188,14 @@ The total wheel kinetic energy is:
 
 **Total Kinetic energy and Potential energy**
 
-- $K = K_f + K_g + K_b + K_w
+- \[
+K = K_f + K_g + K_b + K_w \\
+= \frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2 + \frac{1}{2} m_f l_f^2 \dot{\theta}^2 + m_f \dot{\alpha} r l_f \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_f \left( r \dot{\alpha} \right)^2 \\
++ \frac{1}{2} I_{gx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 \right) + \frac{1}{2} I_{gy} \left( \dot{\varphi} \right)^2 + \frac{1}{2} I_{gz} \left( \sin \varphi \cdot \dot{\theta} \right)^2 + \frac{1}{2} m_g l_g^2 \dot{\varphi}^2 \\
++ \frac{1}{2} m_g \left(l_f - l_g \cos \varphi \right)^2 \dot{\theta}^2 + \frac{1}{2} m_g \left( r \dot{\alpha} \right)^2 \\
++ \frac{1}{2} I_{bx} \dot{\theta}^2 + \frac{1}{2} m_b \left( r \dot{\alpha} \right)^2 + m_b r \dot{\alpha} l_b \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_b \left( l_b \dot{\theta} \right)^2 \\
++ \frac{1}{2} I_w \dot{\alpha}^2 + \frac{1}{2} m_w \left( r \dot{\alpha} \right)^2
+\]
 
-  = \frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2 + \frac{1}{2} m_f l_f^2 \dot{\theta}^2 + m_f \dot{\alpha} r l_f \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_f \left( r \dot{\alpha} \right)^2
 
-  + \frac{1}{2} I_{gx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 \right) + \frac{1}{2} I_{gy} \left( \dot{\varphi} \right)^2 + \frac{1}{2} I_{gz} \left( \sin \varphi \cdot \dot{\theta} \right)^2 + \frac{1}{2} m_g l_g^2 \dot{\varphi}^2 + \frac{1}{2} m_g \left(l_f - l_g \cos \varphi \right)^2 \dot{\theta}^2 + \frac{1}{2} m_g \left( r \dot{\alpha} \right)^2
-  
-  + \frac{1}{2} I_{bx} \dot{\theta}^2 + \frac{1}{2} m_b \left( r \dot{\alpha} \right)^2 + m_b r \dot{\alpha} l_b \cos \theta \cdot \dot{\theta} + \frac{1}{2} m_b \left( l_b \dot{\theta} \right)^2
-  
-  + \frac{1}{2} I_w \dot{\alpha}^2 + \frac{1}{2} m_w \left( r \dot{\alpha} \right)^2$
 
