@@ -17,7 +17,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 |I|Moment of inertia ($kg  m^2$)|$I = \frac{(mr^2)}{2}$|
 |$f_w$|external force acting on the wheel|0.003|
 
-**Table 1: Two wheel robot Parameters**
+**Table 1: Model of two wheel robot Parameters**
 
 **Relationship between x and $x_b$**
 
