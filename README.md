@@ -100,3 +100,10 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 **Coordinate relationship of Robot & Wheel**
 
 <img src="Image/CMG_robot_Image/Coordinate_relationship_of_Robot_&_Wheel.png" alt="RCTVC" style="width: 30%;" />
+
+**Coordinate relationship of Robot & Wheel**
+
+<img src="Image/CMG_robot_Image/Coordinate_relationship_of_Gimbal_&_Robot.png" alt="RCTVC" style="width: 30%;" />
+
+
+
