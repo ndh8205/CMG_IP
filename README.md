@@ -19,7 +19,7 @@ As shown in Figure 1, we can define direction d as:
 
 - $d = \sqrt{(x_d - x)^2 + (y_d - y)^2}$
 
-Heading angle $/theta$ as:
+Heading angle $\theta$ as:
 
 - $\theta = \tan^{-1} \left(\frac{y_d - y}{x_d - x}\right)$
 
