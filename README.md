@@ -93,4 +93,6 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 
 <img src="Image/CMG_robot_Image/CMG_DCM.png" alt="RCTVC" style="width: 80%;" />
 
+**Figure 4:** Relationship between wheel coordinates and inertial coordinates
+
 
