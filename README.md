@@ -185,3 +185,5 @@ The total robot kinetic energy is:
 The total wheel kinetic energy is: 
 
 - $K_w = \frac{1}{2} I_w \dot{\alpha}^2 + \frac{1}{2} m_w \left( r \dot{\alpha} \right)^2$
+
+*Euler Lagrange equation*
