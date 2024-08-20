@@ -10,7 +10,7 @@ pendulum system is a classic example of an unstable system. It consists of a pen
 ## Inverted pendulum with cart System modelling
 ![RCTVC](Image/Inverted_pendulum_with_cart.png)
 
-**Figure 1:** Inverted pendulum on cart
+**Figure 1:** Model of inverted pendulum on cart
 
 ### Inverted pendulum on cart Parameters
 
