@@ -87,7 +87,7 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 
 ![RCTVC](Image/CMG_robot_Image/CMG_Robot.png)
 
-<img src="Image/CMG_robot_Image/CMG_Robot1.png" alt="RCTVC" style="width: 60%;" />
+<img src="Image/CMG_robot_Image/CMG_Robot1.png" alt="RCTVC" style="width: 50%;" />
 
 **Figure 3:** Model of Two wheeled robot posture stability control using CMG
 
