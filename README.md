@@ -151,3 +151,4 @@ The Flywheel Angular velocity is obtained as:
 
 <img src="Image/CMG_robot_Image/Flywheel_Angular_velocity.png" alt="RCTVC" style="width: 12%;" />
 
+To obtain rotational kinetic energy, the three matrix above must be added. (Flywheel is affected by the angular velocity of the gimbal in the x-axis direction.) $K_R = \frac{1}{2} I \omega^2$
