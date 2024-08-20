@@ -188,6 +188,6 @@ The total wheel kinetic energy is:
 
 **Total Kinetic energy and Potential energy**
 
-<img src="Image/CMG_robot_Image/Gimbal_Angular_velocity.png" alt="RCTVC" style="width: 12%;" />
+<img src="Image/CMG_robot_Image/K_total.png" alt="RCTVC" style="width: 60%;" />
 
 
