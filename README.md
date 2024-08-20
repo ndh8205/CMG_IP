@@ -164,4 +164,4 @@ The Relationship between x and y
 
 - $z = l_f \cos \theta$
 
-The kinetic energy of a rigid body is $\boldsymbol{T} = \frac{1}{2} m \boldsymbol{v}^2 = \frac{1}{2} m_f \left(v_x^2 + v_y^2 + v_z^2\right)$. However, as shown in Figure 3, $v_x = 0$, so $boldsymbol{T} = \frac{1}{2} m_f \left(v_y^ 2 + v_z ^2\right)$.
+The kinetic energy of a rigid body is $\boldsymbol{T} = \frac{1}{2} m \boldsymbol{v}^2 = \frac{1}{2} m_f \left(v_x^2 + v_y^2 + v_z^2\right)$. However, as shown in Figure 3, $v_x = 0$, so $\boldsymbol{T} = \frac{1}{2} m_f \left(v_y^2 + v_z^2\right)$
