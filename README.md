@@ -194,5 +194,8 @@ The total wheel kinetic energy is:
 
 <img src="Image/CMG_robot_Image/U_total.png" alt="RCTVC" style="width: 60%;" />
 
+After solving and linearizing the Euler Lagrange equation, you can obtain the following equation:
+
+
 
 
