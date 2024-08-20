@@ -1,5 +1,3 @@
-import numpy as np
-
 ## Two wheel robot
 
 The dynamics of a Two wheel robot are not much different from an inverted pendulum, and its mechanism is based on an inverted pendulum.
