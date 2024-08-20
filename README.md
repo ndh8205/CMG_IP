@@ -109,3 +109,10 @@ To analyze a Two wheeled robot posture stability control system using CMG, a Dir
 
 <img src="Image/CMG_robot_Image/flywheel_coordinate.png" alt="RCTVC" style="width: 12%;" />
 
+**Euler Lagrange equation**
+
+To find Euler-Lagrange equations, we need to find the Lagrangian. Lagrangian is obtained as:
+
+- $L = K - U$
+
+
