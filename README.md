@@ -23,6 +23,10 @@ Heading angle $\theta$ as:
 
 - $\theta = \tan^{-1} \left(\frac{y_d - y}{x_d - x}\right)$
 
+We can define the errer as:
+
+- $x_e = x_d - x$
+
 <img src="Image/Trajectory_tracking/Trajectory_tracking_PID.png" alt="RCTVC" style="width: 100%;" />
 
 **Figure 2:** Trajectory tracking using PID
