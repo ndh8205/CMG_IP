@@ -12,10 +12,10 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 |Symbol|Description|Value|
 |:---|:---|:---|
 |g|Gravity ($m/s^2$)|9.81|
-|M|Robot mass (kg)|2|
-|m|Wheel mass (kg)|0.5|
-|r|Wheel radius (m)|0.03|
-|L|Length of pendulum (m)|0.3|
+|M|Robot mass ($kg$)|2|
+|m|Wheel mass ($kg$)|0.5|
+|r|Wheel radius ($m$)|0.03|
+|L|Length of pendulum ($m$)|0.3|
 |I|Moment of inertia ($kg  m^2$)|$I = \frac{(mr^2)}{2}$|
 |$f_w$|external force acting on the wheel|0.003|
 
