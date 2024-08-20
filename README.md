@@ -27,6 +27,8 @@ We can define the errer as:
 
 - $x_e = x_d - x$
 
+## Simulation
+
 <img src="Image/Trajectory_tracking/Trajectory_tracking_PID.png" alt="RCTVC" style="width: 100%;" />
 
 **Figure 2:** Trajectory tracking using PID
