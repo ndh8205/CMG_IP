@@ -210,7 +210,7 @@ After solving and linearizing the Euler Lagrange equation, you can obtain the fo
 
 ## Robot Simulation
 
-![RCTVC](Image/3_Two_wheel_Robot_with_CMG/graph_picture/Two_wheel_Robot_with_CMG_PID.png)
+![RCTVC](3_Two_wheel_Robot_with_CMG/graph_picture/Two_wheel_Robot_with_CMG_PID.png)
 
 **Figure 4:** Two wheel Robot with CMG PID
 
