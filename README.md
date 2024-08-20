@@ -55,6 +55,8 @@ if we slove this equation, we can get the equation of Torque for the center of m
 
 - $\left(I_b + m_b l^2\right) \ddot{\theta} = m_b g l \sin \theta - m_b l \cos \theta \cdot \ddot{x} - \tau + f_b l \cos \theta$
 
+**Linearize**
+
 If we linearize the above equation and then organize it into equations for $\ddot{x}$ and $\ddot{\theta}$, we get the following equation :
 
 $\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b l^2$ , $Q = m_b l$
