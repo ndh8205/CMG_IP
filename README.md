@@ -131,6 +131,6 @@ Potential energy is easy to find, because potential energy formula is about high
 
 - $U_w = m_w g r$
 
-
+Now let's find kinetic energy formula
 
 
