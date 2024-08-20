@@ -158,5 +158,10 @@ To get the rotational kinetic energy, we need to add the above three matrices. (
 
 - $\frac{1}{2} I_{fx} \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_{fz} \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2$
 
+The Relationship between x and y
+
+- $y = r \alpha + l_f \sin \theta$
+
+- $z = l_f \cos \theta$
 
 
