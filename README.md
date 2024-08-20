@@ -154,5 +154,5 @@ The Flywheel Angular velocity is obtained as:
 The rotational kinetic energy of a rigid body is $K_R = \frac{1}{2} I \left( \omega_x + \omega_y + \omega_z \right)^2$. However, in the flywheel, $\omega_y = 0$, so $K_R = \frac{1}{2} I \left( \omega_x + \omega_z \right)^2$.
 To get the rotational kinetic energy, we need to add the above three matrices. (The flywheel is affected by the angular velocity of the gimbal in the x-axis direction.) Therefore, the flywheel rotational kinetic energy can be obtained as:
 
-- $\frac{1}{2} I_f \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_f \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2$
+- $\frac{1}{2} I_fx \left( \cos^2 \varphi \cdot \dot{\theta}^2 + \dot{\varphi}^2 \right) + \frac{1}{2} I_fz \left( \sin \varphi \cdot \dot{\theta} + \omega \right)^2$
 
