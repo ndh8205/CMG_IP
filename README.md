@@ -147,3 +147,7 @@ The gimbal angular velocity is obtained as:
 
 <img src="Image/CMG_robot_Image/Gimbal_Angular_velocity.png" alt="RCTVC" style="width: 12%;" />
 
+The Flywheel Angular velocity is obtained as:
+
+<img src="Image/CMG_robot_Image/Flywheel_Angular_velocity.png" alt="RCTVC" style="width: 12%;" />
+
