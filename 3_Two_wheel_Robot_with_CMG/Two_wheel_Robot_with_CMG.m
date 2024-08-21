@@ -21,62 +21,93 @@ X_init = [theta0; theta_dot0; phi0; phi_dot0; x0; x_dot0];          % State vect
  
 CMG_PID = X_init;
 
-% 제어값
-theta_d = deg2rad(0);                                               % 제어 로봇 각도
-theta_dot_d = 0;                                                    % 제어 로봇 각속도
-phi_d = deg2rad(0);                                                 % gimbal 각도 (rad)
-phi_dot_d  = 0;                                                     % gimbal 각속도 (rad/s)
-x_d = 0;                                                            % 제어 로봇의 위치
-x_dot_d = 0;                                                        % 제어 로봇의 속도
- 
-X_target = [theta_d; theta_dot_d; phi_d; phi_dot_d; x_d; x_dot_d];
+% 다중 웨이포인트
+x_d1 = 0;
+x_d2 = 3;
+x_d3 = 8;
+x_d4 = 0;
+
+x_d_all = [x_d1]; %; x_d2; x_d3; x_d4
+x_d_size = length(x_d_all(:,1));
+
+save_cnt = 1;
 
 % Preallocation
-state_history_CMG_PID = zeros(length(T), 6);
-
-target = zeros(length(T), 6);
+state_history_Robot = zeros(3, length(T));
+state_history_CMG_PID = zeros(6, length(T));
+state_history_target = zeros(3, length(T));
 
 % 초기값
-state_history_CMG_PID(1 , :) = X_init;
+state_history_Robot(: , 1) = [theta0; phi0; x0];                % 출력값 배열 생성
+state_history_CMG_PID(: , 1) = X_init;
+state_history_target(: , 1) = [theta0; phi0; x0];               % 목표 제어값 배열 생성
 
-for i = 1 : length(T) - 1
+for waypoint = 1 : x_d_size
 
-    %목표값
-    target(i) = theta_d;
+    %%=============== 제어값 ===============%%
+    theta_d = deg2rad(0);                                               % 로봇 몸체 각도 제어 (rad)
+    theta_dot_d = 0;                                                    % 로봇 몸체 각속도 제어 (rad/s)
+    phi_d = deg2rad(0);                                                 % gimbal 각도 (rad)
+    phi_dot_d  = 0;                                                     % gimbal 각속도 (rad/s)
+    x_d = x_d_all(waypoint,1);                                          % 로봇 위치 제어 (m)
+    x_dot_d = 0;                                                        % 로봇 속도 제어 (m/s)
     
-    % 제어 입력 
-    U_alpha = -Wheel_PID(CMG_PID, X_target, params);    
-    U_phi = Gimbal_PID(CMG_PID, X_target, params);  
- 
-    U = [U_alpha; U_phi]; 
+    target = [theta_d; phi_d; x_d];                                     % 목표 제어값 
+   
+    
+    X_target = [theta_d; theta_dot_d; phi_d; phi_dot_d; x_d; x_dot_d];
+    
+    for i = 1 : length(T) - 1
+        %목표값
+        state_history_target(i) = theta_d;
+        
+        % 제어 입력 
+        U_theta = -Wheel_PID(CMG_PID, X_target, params);
+        U_phi = Gimbal_PID(CMG_PID, X_target, params);  
+        
+        U = [U_theta; U_phi]; 
+        
+        % Rk4
+        CMG_PID = Rk4(@Two_wheel_Robot_with_CMG_dynamics, CMG_PID, U, dt, params);
+        
+        % 변수 저장
+        state_history_Robot(1, save_cnt + 1) = CMG_PID(1, :);
+        state_history_Robot(2, save_cnt + 1) = CMG_PID(3, :);
+        state_history_Robot(3, save_cnt + 1) = CMG_PID(5, :);
 
-    % Rk4
-    CMG_PID = Rk4(@Two_wheel_Robot_with_CMG_dynamics, CMG_PID, U, dt, params);
+        save_cnt = save_cnt + 1;    
+    end
 
-    % 변수 저장
-    state_history_CMG_PID(i + 1, :) = CMG_PID';    
- 
 end
+
+state_history_target(: , 1) = target;
+
+T = 1 : save_cnt;
+T = T*dt;
+
 %%====================================== Plot ======================================%%
 % Plot results for Linear PID control
 figure(1);
 subplot(3, 1, 1); 
-plot(T, 100*state_history_CMG_PID(:, 5)); % Plotting x
+plot(T, 100*state_history_Robot(3, :)); % Plotting x
+hold on
+plot(T, 100*state_history_target(3, :),"red--"); % Plotting x
 grid on; xlabel('Time [s]'); ylabel('Robot Position [cm]'); title('Robot with CMG Position (PID Control)');
+legend('Robot Position','Target Position');
 hold on 
  
 subplot(3, 1, 2); 
-plot(T, rad2deg(state_history_CMG_PID(:, 1))); % Plotting theta in degrees   
+plot(T, rad2deg(state_history_Robot(2, :))); % Plotting theta in degrees   
 hold on
-plot(T, rad2deg(target),"red--"); % Plotting x
+plot(T, rad2deg(state_history_target(2, :)),"red--"); % Plotting x
 grid on; xlabel('Time [s]'); ylabel('Robot Angle [deg]'); title('Robot with CMG body Angle (PID Control)');
 legend('Robot Angle','Target Angle'); ylim([-10 10]);
 hold on
 
 subplot(3, 1, 3);  
-plot(T, rad2deg(state_history_CMG_PID(:, 3))); % Plotting Gimbal Angle    
+plot(T, rad2deg(state_history_Robot(1,:))); % Plotting Gimbal Angle    
 hold on
-plot(T, rad2deg(target),"red--"); % Plotting x
+plot(T, rad2deg(state_history_target(1, :)),"red--"); % Plotting x
 grid on; xlabel('Time [s]'); ylabel('Gimbal Angle [deg]'); title('Robot with CMG Gimbal Angle (PID Control)');
 legend('Gimbal Angle','Target Angle'); ylim([-10 10]);
 hold on
@@ -85,7 +116,8 @@ hold on
 %%====================================== Parameters ======================================%%
 function params = Params_init() 
     % % PID 게인값 
-    %---------------    wheel, gimbal gain값   ---------------%
+
+    %---------------  wheel, gimbal gain값-2 ---------------%
 
     params.Ka_p_wheel = 70;   
     params.Ka_i_wheel = 350;
@@ -96,9 +128,6 @@ function params = Params_init()
     params.Ka_i_gimbal = 350;
     params.Ka_d_gimbal = 0.5; 
     %---------------------------------------------------------%
-
-
-
     
     
     % 초기값
@@ -151,6 +180,9 @@ function Robot_xdot = Two_wheel_Robot_with_CMG_dynamics(X, U, params)
     U_alpha = U(1);
     U_phi = U(2);
 
+    % U_alpha = U;
+    % U_phi = U;
+
     %%=============== 상태변수 ===============%%
  
     % theta
@@ -195,7 +227,7 @@ end
 
 %% PID Controller
 %%====================================== PID Controller Function ======================================%%
-function U_alpha = Wheel_PID(X, X_target, params)
+function U_theta = Wheel_PID(X, X_target, params)
     persistent integral_theta error_previous;
     if isempty(integral_theta)
         integral_theta = 0;
@@ -215,12 +247,12 @@ function U_alpha = Wheel_PID(X, X_target, params)
     % PID control law
     integral_theta = integral_theta + e_theta * params.dt;
     derivative_theta = (e_theta - error_previous) / params.dt;
-    U_alpha = (Kp_wheel * e_theta + Ki_wheel * integral_theta + Kd_wheel * derivative_theta);
+    U_theta = (Kp_wheel * e_theta + Ki_wheel * integral_theta + Kd_wheel * derivative_theta);
 
     % Update previous error
     error_previous = e_theta;    
 end
-    
+
 function U_phi = Gimbal_PID(X, X_target, params)
     persistent integral_theta error_previous;
     if isempty(integral_theta)
