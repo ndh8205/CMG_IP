@@ -141,8 +141,7 @@ The kinetic energy of an object can be divided into two types of energy: rotatio
 
 For example, let's find the rotational kinetic energy of flywheel.
 
-Flywheel coordinates have the same coordinates as gimbal coordinates. Angular velocity coordinate relationship between robot and gimbal
-
+Flywheel coordinates have the same coordinates as gimbal coordinates. (Angular velocity coordinate relationship between robot and gimbal)
 The angular velocity coordinate relationship between the robot and the gimbal is obtained as:
 
 <img src="Image/CMG_robot_Image/Angular_velocity_coordinate_relationship_between_robot_and_gimbal.png" alt="RCTVC" style="width: 45%;" />
