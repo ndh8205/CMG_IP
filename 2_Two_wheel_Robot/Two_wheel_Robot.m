@@ -1,114 +1,113 @@
 clc;   
-clear;
+clear;   
 close all;
 
 %%====================================== Main ======================================%% 
 % 초기값
 params = Params_init();
 r_w = params.r_w;
-
+ 
 % 시간
-dt = 0.001;                                      % 시간차 
-T = 0:dt:6;                                      % 총 시간
+dt = 0.01;                                                     % 시간차 
+T = 0:dt:10;                                                    % 총 시간
 
 % 초기 조건
-x0 = 0;                                          % 카트 위치 (m)
-x_dot0 = 0;                                      % 카트 속도 (m/s)
-theta0 = deg2rad(10);                            % 진자 각도 (rad)
-theta_dot0 = 0;                                  % 진자 각속도 (rad/s)
+pos_I = 0;                                                     % 로봇 위치 (m)
+Vel_B = 0;                                                     % 로봇 속도 (m/s)
+ang_I = deg2rad(40);                                           % 로봇 몸체 각도 (rad)
+ang_V_B = 0;                                                   % 로봇 몸체 각속도 (rad/s)
 
-X_init = [x0; x_dot0; theta0; theta_dot0];       % State vector
+Robot_init = [pos_I; Vel_B; ang_I; ang_V_B];                   % State vector
 
-a_PD = X_init;
-a_PID = X_init;
+Robot_PID = Robot_init;
 
-% 제어값
-x_d = 0;                                         % 제어 카트 위치
-x_dot_d = 0;                                     % 제어 카트 속도
-theta_d = deg2rad(0);                            % 제어 진자 각도
-theta_dot_d = 0;                                 % 제어 진자 각속도
- 
+% 다중 웨이포인트
+pos_d_1 = 0;
+pos_d_2 = 3;
+pos_d_3 = 8;
+pos_d_4 = 0;
 
-X_target = [x_d, x_dot_d, theta_d, theta_dot_d];
+pos_d_all = [pos_d_1]; %; pos_d_2; pos_d_3; pos_d_4
+pos_d_size = length(pos_d_all(:,1));
+
+save_cnt = 1;
 
 % Preallocation
-state_history_U_PD = zeros(length(T), 4); 
-state_history_U_PID = zeros(length(T), 4);
-
-target = zeros(length(T), 2);                    % 목표 제어값 표시
+state_history_Robot = zeros(2, length(T));
+state_history_PID = zeros(4, length(T));
+state_history_target = zeros(2, length(T));
 
 % 초기값
-state_history_U_PD(1 , :) = X_init;
-state_history_U_PID(1 , :) = X_init;
-
-target(1 , :) = [X_target(1);X_target(3)];                    % 목표 제어값 표시
-
-for i = 1 : length(T) - 1
+state_history_Robot = [pos_I; ang_I];                          % 출력값 배열 생성
+state_history_PID(: , 1) = Robot_PID;                          % 초기값 배열 생성
+state_history_target(: , 1) = [pos_I; ang_I];                  % 목표 제어값 배열 생성
 
 
-    % %목표값
-    target(i+ 1,1) = x_d;
-    target(i+ 1,2) = theta_d;
-    
-    % 제어 입력
-    U_theta_PD = theta_Controller_PD(a_PD, X_target, params); 
+for waypoint = 1 : pos_d_size
 
-    U_pos = a_Controller_PID(a_PID, X_target, params);
-    U_theta = theta_Controller_PID(a_PID, X_target, params);
+    %%=============== 제어값 ===============%%
+    pos_d = pos_d_all(waypoint,1);                             % 로봇 위치 제어 (m)
+    Vel_d = 0;                                                 % 로봇 속도 제어 (m/s)
+    ang_I_d = deg2rad(0);                                      % 로봇 몸체 각도 제어 (rad)
+    ang_V_B_d = 0;                                             % 로봇 몸체 각속도 제어 (rad/s)
 
-    U = [U_pos; U_theta];
+    target = [pos_d; ang_I_d];                                 % 목표 제어값 
+    state_history_target(: , 1) = target;
 
+    for i = 1 : length(T) - 1
 
-    % Rk4
-    a_PD = Rk4(@inverted_pendulum_Robot_dynamics_PD, a_PD, U_theta_PD, dt, params);
-    a_PID = Rk4(@inverted_pendulum_Robot_dynamics, a_PID, U, dt, params);
+        % 제어 입력            
+        U_pos = Position_PID(Robot_PID, target, params);
+        U_angle = Angle_PID(Robot_PID, target, params);
 
-    % 변수 저장
-    state_history_U_PD(i + 1, :) = a_PD'; 
-    state_history_U_PID(i + 1, :) = a_PID';    
- 
+        U = U_pos + U_angle;
+        
+        % Rk4        
+        Robot_PID = Rk4(@inverted_pendulum_Robot_dynamics, Robot_PID, U, dt, params );       
+
+        % 변수 저장
+        state_history_Robot(1, save_cnt + 1) = Robot_PID(1, :);
+        state_history_Robot(2, save_cnt + 1) = Robot_PID(3, :);
+
+        state_history_target(1, save_cnt + 1) = target(1);
+        state_history_target(2, save_cnt + 1) = target(2);
+     
+        save_cnt = save_cnt + 1;
+    end        
+
 end
+
+Position(1,:) = state_history_Robot(1, :);
+Angle(1, :) = state_history_Robot(2, :);
+
+pos_target(1,:) = state_history_target(1, :);
+angle_target(1, :) = state_history_target(2, :);
+
+T = 1 : save_cnt;
+T = T*dt;
 
 %%====================================== Plot ======================================%%
 % Plot results for Linear PID control
-
-Yp_pls = target(1) + 2;
-Yp_neg = target(1) - 2;
 Yt_pls = 25;
 Yt_neg = -25;
 
 figure(1);
 subplot(2, 1, 1);
-plot(T, state_history_U_PD(:, 1)); % Plotting Position
+plot(T, Position(1,:)); % Plotting Position
 hold on
-plot(T, target(:,1),"red--"); % Plotting target Position
-grid on; xlabel('Time [s]'); ylabel('Robot Position [cm]'); title('Robot Position (PD Control)');
-legend('Robot Position', 'Target Position'); ylim([Yp_neg Yp_pls]);
-hold on
-
-subplot(2, 1, 2);
-plot(T, rad2deg(state_history_U_PD(:, 3))); % Plotting theta in degrees
-hold on
-plot(T, rad2deg(target(:,2)),"red--"); % Plotting target theta in degrees
-grid on; xlabel('Time [s]'); ylabel('Robot Angle [deg]'); title('Robot body Angle (PD Control)');
-legend('Robot body Angle','Target Angle'); ylim([Yt_neg Yt_pls]);
-hold on
-
-figure(2);
-subplot(2, 1, 1);
-plot(T, state_history_U_PID(:, 1)); % Plotting Position
-hold on
-plot(T, target(:,1),"red--"); % Plotting target Position
+plot(T, pos_target(1,:),"red--"); % Plotting target Position
 grid on; xlabel('Time [s]'); ylabel('Robot Position [cm]'); title('Robot Position (PID Control)');
-legend('Robot Position', 'Target Position'); ylim([Yp_neg Yp_pls]);
+legend('Robot Position', 'Target Position'); 
+% ylim([0 Yp_pls]);
 hold on
 
 subplot(2, 1, 2);
-plot(T, rad2deg(state_history_U_PID(:, 3))); % Plotting theta in degrees
+plot(T, rad2deg(Angle(1, :))); % Plotting theta in degrees
 hold on
-plot(T, rad2deg(target(:,2)),"red--"); % Plotting target theta in degrees
+plot(T, rad2deg(angle_target(1, :)),"red--"); % Plotting target theta in degrees
 grid on; xlabel('Time [s]'); ylabel('Robot Angle [deg]'); title('Robot body Angle (PID Control)');
-legend('Robot body Angle','Target Angle'); ylim([Yt_neg Yt_pls]);
+legend('Robot body Angle','Target Angle');
+% ylim([Yt_neg Yt_pls]);
 hold on
 
 
@@ -117,106 +116,60 @@ hold on
 %%====================================== Parameters ======================================%%
 function params = Params_init() 
     % % PID 게인값 
-  
-    params.a_Kp = 10;  
-    params.a_Ki = 6.838;
-    params.a_Kd = 2.5;
+    params.pos_Kp = 0;  
+    params.pos_Ki = 0;
+    params.pos_Kd = 0;
 
-    params.Theta_Kp = 2;  
-    params.Theta_Ki = 5.084;
-    params.Theta_Kd = 0.071;
+    params.Theta_Kp = 0;  
+    params.Theta_Ki = 0;
+    params.Theta_Kd = 0;
+
+    % params.pos_Kp = 0;  
+    % params.pos_Ki = 0;
+    % params.pos_Kd = 0;
+    % 
+    % params.Theta_Kp = 0;  
+    % params.Theta_Ki = 0;
+    % params.Theta_Kd = 0;
+
+    
 
     % 초기값
-    params.g = 9.81;                                       % 중력 (m/s^2)       
-    params.M = 2;                                          % 로봇 질량 (kg)    
-    params.m = 0.5;                                        % 바퀴 질량 (kg)
-    params.L = 0.3;                                        % 로봇 길이 (m)
-    params.r_w = 0.03;                                     % 막대 반지름
-    params.r_b = 0.03;                                     % 바퀴 반지름    
-    params.C_a = 0.00055;                                  % 외력
+    params.g = 9.81;                                           % 중력 (m/s^2)    
+    params.m_w = 0.5;                                          % 바퀴 질량 (kg)
+    params.m_b = 2;                                            % 로봇 질량 (kg)
+    params.r_w = 0.03;                                         % 바퀴 반지름 (m)
+    params.r_b = 0.03;                                         % 막대 반지름 (m)
+    params.L = 0.3;                                            % 로봇 길이 (m)
+    params.I_w = (params.m_w*params.r_w^2)/2;                  % 바퀴 관성모멘트 (kg m^2) 
+    params.I_b = (params.m_b*params.r_b^2)/2;                  % 막대 관성모멘트 (kg m^2)
+    
+    params.f_w = 0.003;                                        % 바퀴에 작용하는 외력
+    params.f_b = 0;                                            % 로봇에 작용하는 외력
 
     params.dt = 1/1000;
 end
 
 %% Dynamics
 %%====================================== Dynamics ======================================%%
-function Robot_xdot = inverted_pendulum_Robot_dynamics_PD(X, U_theta_PD, params)
-
-    % 초기값 Unpack 
-    g = params.g;    
-    M = params.M;
-    m = params.m;
-    L = params.L;
-    r_w = params.r_w;
-    r_b = params.r_b;
-    I_b = (M * r_b ^2) / 2 ;
-    I_w = (m * r_w ^2) / 2;
-    C_a = params.C_a;
-
-
-    U_theta = U_theta_PD;
-
-    %%=============== 상태변수 ===============%%
-    
-    % Position
-    x = X(1);
-    alpha = x / r_w;                                     % 바퀴 이동 거리 (rad)
-
-    % Position V                       
-    x_dot = X(2);
-    alpha_dot = x_dot / r_w;                             % 바퀴 이동 속도 (rad/s)
-
-    % theta
-    theta = X(3);
-
-    % theta V
-    theta_dot = X(4);
-
-
-    % 선형 방정식 치환
-    A = ((M + m) * r_w^2 + I_w);
-    B = (I_b + M * L^2);
-    denominator = A * B - (r_w * M * L)^2;
-    numerator_a = r_w * g * theta * (M * L)^2 - B * C_a * alpha_dot + B * U_theta;
-    numerator_theta = A * M * L * g * theta - r_w * M * L * C_a * alpha_dot + r_w * M * L * U_theta;
-         
-    % Position A
-    a_2dot = numerator_a / denominator;
-    x_2dot = a_2dot * r_w;
-  
-    % theta A
-    theta_2dot = numerator_theta / denominator;    
- 
-    % State derivatives
-    Robot_xdot = [x_dot; x_2dot; theta_dot; theta_2dot;];
-end
-
 function Robot_xdot = inverted_pendulum_Robot_dynamics(X, U, params)
 
     % 초기값 Unpack 
-    g = params.g;    
-    M = params.M;
-    m = params.m;
-    L = params.L;
+    g = params.g;
+    m_w = params.m_w;
+    m_b = params.m_b;
     r_w = params.r_w;
-    r_b = params.r_b;
-    I_b = (M * r_b ^2) / 2 ;
-    I_w = (m * r_w ^2) / 2;
-    C_a = params.C_a;
-
-
-    U_pos = U(1);
-    U_theta = U(2);
+    L = params.L;
+    I_w = params.I_w;
+    I_b = params.I_b;
+    f_w = params.f_w;
 
     %%=============== 상태변수 ===============%%
-    
     % Position
     x = X(1);
-    alpha = x / r_w;                                     % 바퀴 이동 거리 (rad)
 
-    % Position V                       
+    % Position V 
     x_dot = X(2);
-    alpha_dot = x_dot / r_w;                             % 바퀴 이동 속도 (rad/s)
 
     % theta
     theta = X(3);
@@ -224,80 +177,89 @@ function Robot_xdot = inverted_pendulum_Robot_dynamics(X, U, params)
     % theta V
     theta_dot = X(4);
 
+ 
+    % 비선형 방정식 치환
+    W = (m_w + m_b) + I_w / (r_w ^ 2);
+    P = I_b + m_b * L ^ 2;
+    Q = m_b * L;
+    denominator = (Q * cos(theta)) ^ 2 - W * P;
+    numerator_X = - P * Q * sin(theta) * (theta_dot ^ 2) + (Q ^ 2) * sin(theta) * cos(theta) * g ...
+                  + P * f_w + (Q * P * cos(theta) / r_w) * U;
 
-    % 선형 방정식 치환
-    A = ((M + m) * r_w^2 + I_w);
-    B = (I_b + M * L^2);
-    denominator = A * B - (r_w * M * L)^2;
-    numerator_a = r_w * g * theta * (M * L)^2 - B * C_a * alpha_dot + B * U_theta;
-    numerator_theta = A * M * L * g * theta - r_w * M * L * C_a * alpha_dot + r_w * M * L * U_theta;
+    numerator_theta = (Q ^ 2) * sin(theta) * cos(theta) * (theta_dot ^ 2) - W * Q * sin(theta) * g ...
+                  + Q * cos(theta) * f_w + (Q * cos(theta) / r_w + W) * U;
          
     % Position A
-    a_2dot = numerator_a / denominator;
-    x_2dot = a_2dot * r_w;
+    x_2dot = numerator_X / denominator;
   
     % theta A
     theta_2dot = numerator_theta / denominator;    
  
     % State derivatives
-    Robot_xdot = [x_dot; x_2dot; theta_dot; theta_2dot;];
+    Robot_xdot = [x_dot; x_2dot; theta_dot; theta_2dot];
 end
 
-%% PD Integration Function
-%%====================================== PD Controller Function ======================================%%
-function U_theta_PD = theta_Controller_PD(X, X_target, params)
-     persistent integral_theta error_previous;
-    if isempty(integral_theta)
-        integral_theta = 0;
-        error_previous = 0;
-    end
-
-    % Robot PID 게인값 
-    Kp = params.Theta_Kp; 
-    Ki = 0; 
-    Kd = params.Theta_Kd;  
-
-    % PD 제어    
-    theta0 = X(3);
-    e_theta = X_target(3) - theta0;
+%%====================================== State space matrices ======================================%%
+%% State-space matrices
+function [A, B, C, D] = state_space_matrices(params)
+    g = params.g;
+    m_w = params.m_w;
+    m_b = params.m_b;
+    r_w = params.r_w;
+    L = params.L;
+    I_w = params.I_w;
+    I_b = params.I_b;
     
-    % PID control law
-    integral_theta = integral_theta + e_theta * params.dt;
-    derivative_theta = (e_theta - error_previous) / params.dt;
-    U_theta_PD = (Kp * e_theta + Ki * integral_theta + Kd * derivative_theta);
+    % 선형 방정식 치환
+    W = (m_w + m_b) + I_w / (r_w ^ 2);
+    P = I_b + m_b * L ^ 2;
+    Q = m_b * L;
 
-    % Update previous error
-    error_previous = e_theta;        
+    a_23 = (Q ^ 2) * g / H;
+    a_43 = - W * Q * g / H;
+    b_21 = (Q * P) / (H * r_w);
+    b_41 = Q / (H * r_w) + W;
+
+    A = [ 0,        1,       0,        0 ;
+          0,        0,       a_23,     0 ;
+          0,        0,       0,        1 ;
+          0,        0,       a_43,     0 ];
+
+    B = [ 0; b_21; 0; b_41 ];
+
+    C = [1, 0, 0, 0;
+         0, 0, 1, 0];
+
+    D = [0; 0];
 end
-
 %% PID Controller
 %%====================================== PID Controller Function ======================================%%
-function U_pos = a_Controller_PID(X, X_target, params)
-    persistent integral_theta error_previous;
-    if isempty(integral_theta)
-        integral_theta = 0;
+function U_pos = Position_PID(X, target, params)
+    persistent integral_pos error_previous;
+    if isempty(integral_pos)
+        integral_pos = 0;
         error_previous = 0;
     end
 
     % Robot PID 게인값 
-    Kp = params.a_Kp; 
-    Ki = params.a_Ki; 
-    Kd = params.a_Kd;     
+    Kp = params.pos_Kp; 
+    Ki = params.pos_Ki; 
+    Kd = params.pos_Kd;     
     
-    % PD 제어    
-    a0 = X(1);
-    e_a = X_target(1) - a0;
+    % X_target = [x_d, x_dot_d, theta_d, theta_dot_d];
+    x0 = X(1);
+    pos_er = target(1) - x0;
     
     % PID control law
-    integral_theta = integral_theta + e_a * params.dt;
-    derivative_theta = (e_a - error_previous) / params.dt;
-    U_pos = (Kp * e_a + Ki * integral_theta + Kd * derivative_theta);
+    integral_pos = integral_pos + pos_er * params.dt;
+    derivative_pos = (pos_er - error_previous) / params.dt;
+    U_pos = -(Kp * pos_er + Ki * integral_pos + Kd * derivative_pos);
 
     % Update previous error
-    error_previous = e_a;    
+    error_previous = pos_er;    
 end
 
-function U_theta = theta_Controller_PID(X, X_target, params)
+function U_angle = Angle_PID(X, target, params)
     persistent integral_theta error_previous;
     if isempty(integral_theta)
         integral_theta = 0;
@@ -308,18 +270,18 @@ function U_theta = theta_Controller_PID(X, X_target, params)
     Kp = params.Theta_Kp; 
     Ki = params.Theta_Ki; 
     Kd = params.Theta_Kd;  
-
-    % PD 제어    
+    
+    % X_target = [x_d, x_dot_d, theta_d, theta_dot_d];  
     theta0 = X(3);
-    e_theta = X_target(3) - theta0;
+    angle_er = target(2) - theta0;
     
     % PID control law
-    integral_theta = integral_theta + e_theta * params.dt;
-    derivative_theta = (e_theta - error_previous) / params.dt;
-    U_theta = (Kp * e_theta + Ki * integral_theta + Kd * derivative_theta);
+    integral_theta = integral_theta + angle_er * params.dt;
+    derivative_theta = (angle_er - error_previous) / params.dt;
+    U_angle = -(Kp * angle_er + Ki * integral_theta + Kd * derivative_theta);
 
     % Update previous error
-    error_previous = e_theta;    
+    error_previous = angle_er;    
 end
 
 %% RK4 Integration Function
