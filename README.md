@@ -5,7 +5,7 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 ## Two wheel robot
 
-<img src="Image/Robot.png" alt="RCTVC" style="width: 100%;" />
+<img src="Image/Model_of_two_wheel_robot.png" alt="RCTVC" style="width: 100%;" />
 
 **Figure 1:** Model of two wheel robot
 
