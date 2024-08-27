@@ -6,7 +6,7 @@ There are several ways to track trajectories, but for this page we will use PID 
 
 ## Trajectory tracking
 
-To track trajectories we need two states, Heading angle and speed. 
+Tracking a trajectory requires two states: heading angle and velocity.
 
 If you know the two states mentioned above, tracking the trajectory is simple. For example, if you are at point A and plan to travel to point B in 30 minutes, what information do you need? Those are direction and speed. Using these two information, you can predict where your next location will be every time you move. Let's apply this method to a robot. If you want to know the path the robot moves. We need the error between target position and current position. This is because the error between target position and current position contains two information: heading angle and speed.
 
