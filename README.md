@@ -61,7 +61,7 @@ if we slove this equation, we can get the equation of Torque for the center of m
 
 If we linearize the above equation and then organize it into equations for $\ddot{x}$ and $\ddot{\theta}$, we get the following equation :
 
-$\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b L^2$ , $Q = m_b L$
+$\therefore$ $W = \left( m_w + m_b + \frac{I_w}{r^2} \right)$ , $P = I_b + m_b L^2$ , $Q = m_b L , Z = Q^2 - WP$
 
 - $\ddot{x} = \frac{L}{Z} Q^2 g \theta + \frac{L}{Z} \left( \frac{QP}{r} \right) \tau$
 
