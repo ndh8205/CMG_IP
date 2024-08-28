@@ -23,9 +23,9 @@ To analize Two wheel robot system, we follow the same process as for an inverted
 
 **Relationship between x and $x_b$**
 
-- $x_b = x + \frac{L} \sin \theta$
+- $x_b = x + \{L} \sin \theta$
 
-- $y_b = \frac{L} \cos \theta$
+- $y_b = \{L} \cos \theta$
 
 Since $x$ is the length of the arc, it has the relationship $x=ra$. we can get the following equation: 
 
